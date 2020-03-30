@@ -1,0 +1,35 @@
+!!! 5
+%html
+  %head
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    %title L2L
+    = csrf_meta_tags
+    = stylesheet_link_tag    'bootstrap.min', media: 'all'#, 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'#, 'data-turbolinks-track': 'reload'
+  %body
+    %nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle{"data-target" => "#myNavbar", "data-toggle" => "collapse", :type => "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{:href => "index.html"}= image_tag 'scentruc_logo_white.svg', class:"img-responsive"
+        #myNavbar.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right{style:'padding-top:1.5%;'}
+            %li
+              %a{:href => "index.html"} CURRICULUM
+            %li
+              %a{:href => "about.html"} SUBSCRIPTION
+            %li
+              - if current_user.present?
+                %a{:href => "/users/sign_out"} SIGN OUT
+              - else
+                %a{:href => "/users/sign_in"} SIGN IN
+            %li
+              %a{:href => "/users/sign_up"} SIGN UP FREE    
+    .container-fluid
+      - flash.each do |key, value|
+        %div{:class => "alert alert-#{key}"}
+          = value
+      = yield

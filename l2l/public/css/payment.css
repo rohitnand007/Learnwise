@@ -1,0 +1,225 @@
+.custom-nav ul {
+    font-size: 12px;
+    font-family: 'robotomedium';
+    font-weight: 700;
+}
+
+.custom-nav ul li a {
+    color: #272930;
+
+}
+
+.nav-color {
+    background: #fff;
+}
+
+.signup-customstyle:hover {
+    background-color: #ed4079 !important;
+
+}
+
+.signin-customstyle {
+    border: 1px solid #272930;
+    margin-right: 0;
+}
+
+.payment .margin-bottom {
+    margin-bottom: 20px;
+    display: flex;align-items: center;
+}
+.paddingLeft0 {
+    padding-left: 0;
+}
+.paddingRight0 {
+    padding-right: 0;
+}
+.payment .main-font {
+    font-family: 'robotolight';
+    font-size: 2em;
+    color: #737373;
+    padding: 15px 0;
+}
+
+.payment .subfont {
+    font-family: 'robotoregular';
+    font-size: 1.4em;
+    color: #ed4079;
+    padding: 20px 0;
+}
+
+.payment .custom-payment li a {
+    padding: 16px 18px;
+
+}
+
+.payment .custom-payment li + li {
+    margin-top: 8px;
+}
+
+.payment .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #2d2d54;
+}
+
+.payment .nav-pills > li > a, .nav-pills > li > a:focus, .nav-pills > li > a:hover {
+    background-color: #dddddd;
+    color: #fff;
+}
+
+.payment .nav-pills > li > a {
+    border-radius: 5px;
+}
+
+.payment .tab-pane {
+    padding: 2% 10%;
+}
+
+.payment .transaction-form {
+    /*border: 2px solid #f4f4f4;*/
+    border-radius: 6px;
+    background: #2d2d54;
+}
+
+.payment .payment-input input {
+    border: 2px solid #f4f4f4;
+    background: #fff;
+    border-radius: 4px;
+    padding: 16px 16px;
+}
+
+.payment .payment-input label {
+    font-family: 'robotolight';
+    font-size: 20px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 1.125em;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.payment .button-margin {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 24px;
+    background-color: #70ceab;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.payment .btn-height {
+    height: 50px;
+}
+
+.payment-font {
+    color: #fff;
+    font-family: 'robotomedium';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.payment a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    appearance: none;
+    box-shadow: none;
+    background-color: white;
+    border: 2px solid #f4f4f4;
+    border-radius: 4px;
+    padding: 16px 16px;
+}
+
+.error {
+    width: 100%;
+    font-size: 1.125em;
+    color: red;
+}
+
+.error.visible {
+    display: inline;
+}
+
+/*.pills-font li a {*/
+    /*font-size: 1.5em;*/
+/*}*/
+
+input#card-name {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+#errorBox {
+    padding-top: 5%;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cardtext-font {
+     font-family: 'robotolight';
+     font-size: 1.4em;
+     display: inline-block;
+     vertical-align: middle;
+     padding-left: 8px;
+     color: #e3e3e8;
+ }
+.savedcardstext-font {
+    font-family: 'robotolight';
+    font-size: 1.4em;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 8px;
+    color: #fff;
+}
+.payment input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #8a8c93;
+    font-size: 20px;
+}
+.payment input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #8a8c93;
+    font-size: 20px;
+}
+.payment input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #8a8c93;
+    font-size: 20px;
+}
+
+.background {
+    background: url('../images/triangle_background.svg');
+    position: relative;
+    background-size: cover;
+
+}
+.container-alignment {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 14%;
+}
+.pills-align {
+    margin-top: 30px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+   .payment .main-font {
+        font-size: 1.76em;
+    }
+}

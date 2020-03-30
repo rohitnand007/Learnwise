@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/payment.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/controllers/user_control.js"></script>
+    <script src="js/scripts/payment.js"></script>
+</head>
+<body onload="disableBack()">
+<div id="preloader"></div>
+<div class="container-fluid container-padding main-content  window-height">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top custom-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle home-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" id="logo_icon"><img class="img-responsive logo-dimensions"
+                                                            src="images/lernwise_logo.svg"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1"
+                 aria-expanded="true">
+                <ul class="nav navbar-nav navbar-right navlist-center">
+                    <li>
+                        <a class="primary-color" href="curriculum.html">CURRICULUM</a>
+                    </li>
+                    <li>
+                        <a class="primary-color" href="subscription.html">SUBSCRIPTION</a>
+                    </li>
+                    <li class="profile-width">
+                        <a id="signin_nav" style="display: none"
+                           class="signin-customstyle primary-color"
+                           href="sign_in.html">SIGN IN</a>
+                        <a id="profile_nav" style="display: none"
+                           class="signin-customstyle primary-color"></a>
+                    </li>
+                    <li class="signout-width">
+                        <a id="signup_nav" style="display: none" class="signup-customstyle"
+                           href="sign_up.html">SIGN UP FREE</a>
+                        <a id="signout_nav" style="display: none;" class="signup-customstyle"
+                           onclick="signout()">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class=" background subscription window-height ">
+        <div class="container container-alignment payment">
+            <!--<div class="row margin-bottom">-->
+            <!--<div class="col-md-4 paddingLeft0"><span-->
+            <!--class="main-font">Choose a payment method</span></div>-->
+            <!--<div class="col-md-8 paddingRight0"><span class="subfont">Amount payable - $<span-->
+            <!--id="amount_payable"></span>-->
+            <!--</span>-->
+            <!--</div>-->
+            <!--</div>-->
+            <div class="row">
+                <div class="col-md-4">
+                    <div
+                            class="main-font"><span> Choose a payment method </span></div>
+                    <ul class="nav nav-pills nav-stacked  custom-payment pills-font">
+                        <li class="active"><a data-target="#tab_a" data-toggle="pill"><span><img
+                                src="images/Card.svg" width="32px" alt=""/><span
+                                class="cardtext-font"> Credit / Debit Card</span></span></a>
+                        </li>
+                        <li><a data-toggle="pill"><span><img src="images/Saved Cards.svg"
+                                                             width="32px"
+                                                             alt=""/><span
+                                class="savedcardstext-font">Saved Cards</span></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div class="subfont"><span>Amount payable - $<span
+                            id="amount_payable"></span></span>
+                    </div>
+                    <!--<div><i class="fa fa-sort-asc tooltip-icon"></i></div>-->
+                    <div class="tab-content transaction-form">
+                        <div class="tab-pane active" id="tab_a">
+                            <!--<div class="row">-->
+                            <div class="container container-width payment-input">
+                                <form>
+                                    <label for="card-element">Card number</label>
+                                    <div class="card" id="card-element"></div>
+                                    <label for="card-name">Name on card</label>
+                                    <input type="text" id="card-name"
+                                           placeholder="Enter your name"/>
+
+                                    <div class="row">
+                                        <div class="col-md-6"><label for="card-cvv">CVV</label>
+                                            <div class="card" id="card-cvv"></div>
+                                        </div>
+                                        <div class="col-md-6"><label for="card-expdate">Expiration
+                                            date</label>
+                                            <div class="card" id="card-expdate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="error text-center" id="errorBox"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row button-margin" id="make_payment_div">
+                            <a class="payment-font">MAKE PAYMENT</a>
+                        </div>
+                        <!--<div class="tab-pane" id="tab_b">-->
+                        <!--<h4>Pane B</h4>-->
+                        <!--<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames-->
+                        <!--ac turpis egestas.</p>-->
+                        <!--</div>-->
+                    </div>
+                </div><!-- tab content -->
+            </div>
+        </div><!-- end of container -->
+    </div>
+</div>
+<script>
+    function disableBack() { window.history.forward() }
+</script>
+</body>
+</html>

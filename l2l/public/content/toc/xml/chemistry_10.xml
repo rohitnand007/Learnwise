@@ -1,0 +1,520 @@
+<toc version="1" lang="en" icon="/icon/bio.png" display_name="Chemistry" learning_engine="disabled" >
+
+    <!--CHAPTER - 1 -->
+    <ge display_name="CHEMICAL REACTIONS AND EQUATIONS" id="c_2e887891dfba48219b07de64cc2535b3" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="What are chemical equations?" id="s_9bd8eda4f9d249ecb6d4d8e290b8af77" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Interpreting chemical equations" id="C121429" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Interpreting chemical equations" id="C121429" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+
+            </ge>
+
+            <ge display_name="Balancing of equations" id="C121221" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Balancing of equations" id="C121221" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+
+            </ge>
+        </ge>
+
+        <ge display_name="How do chemicals react?" id="s_1a67ffaab55f44a28c19f8793b107a96" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Chemical reactions and their characteristics" notes="false" id="C121242" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Chemical reactions and their characteristics" id="C121242" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Combination reactions" id="C121434" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Combination reactions" id="C121434" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                        <flow_rule>
+                            usage = 500
+                        </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Decomposition reactions" id="C121262" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Decomposition reactions" id="C121262" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+
+            </ge>
+
+            <ge display_name="Displacement reactions" id="C121267" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Displacement reactions" id="C121267" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+
+            </ge>
+
+            <ge display_name="Double displacement reactions" id="C121270" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Double displacement reactions" id="C121270" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+
+            </ge>
+
+            <ge display_name="Oxidation-Reduction and electron transfer method" notes="false" id="C121337" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Oxidation-Reduction and electron transfer method" id="C121337" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="redox_reaction" id="c121357" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="redox_reaction" id="c121357" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="corrosion" id="c121061" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="corrosion" id="c121061" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 2 -->
+    <ge display_name="ACIDS, BASES AND SALTS" id="c_771a74cb6eda4290804ad0e0b5b754b1" demo_content="true" learning_status="0" unlocked="false" icon="/icon/tfu.png">
+
+        <ge display_name="What are acids and bases?" id="s_a8b066c2dd174124890879e72705652e" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Acids and bases" id="C121406" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Acids and bases" id="C121406" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Chemical properties of bases" id="C121239" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Chemical properties of bases" id="C121239" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do acids and bases react with metals?" id="s_0fdf8d37bd1745b4b7e7086b09050018" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Reactions of metals with acids" id="C121163" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reactions of metals with acids" id="C121163" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="c121813_reaction_of_acids_with_metal_carbonates" id="WIP" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="c121813_reaction_of_acids_with_metal_carbonates" id="WIP" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Preparation of salts by neutralization method" id="C121658" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Preparation of salts by neutralization method" id="C121658" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reactions of metal oxides with acids" id="C121007" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reactions of metal oxides with acids" id="C121007" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="What is pH and how is it important?" id="s_369ac6cbdfd6418f8702201102fa51db" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Action of Salivary Enzymes" id="Z121005" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Action of Salivary Enzymes" id="Z121005" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Action of Pancreatic Enzymes" id="Z121004" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Action of Pancreatic Enzymes" id="Z121004" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="What are salts?" id="s_c07546caba7949aebf75cb9c06be3bdf" demo_content="true" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Acids, Bases and Salts" id="C121207" notes="false" demo_content="true" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Acids, Bases and Salts" id="C121207" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Salts Derived from Sodium Chloride" id="c121727" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Salts Derived from Sodium Chloride" id="c121727" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Bleaching Powder and Plaster of Paris" id="c121724" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Bleaching Powder and Plaster of Paris" id="c121724" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Water of hydration – efflorescence and deliquescence" id="C121062" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Water of hydration – efflorescence and deliquescence" id="C121062" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 3 -->
+    <ge display_name="METALS AND NON-METALS" id="c_991602cc9162435d87e709976cdff835" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png">
+
+        <ge display_name="What are metals and non-metals?" id="s_d9d2ee4e02f54af5884921259bb76196" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Metals and non-metals" id="C121407" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Metals and non-metals" id="C121407" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="What are the chemical properties of metals?" id="s_7f860293c3014b1da510a919de4b1ca3" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Chemical Properties of Metals" id="C121035" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Chemical Properties of Metals" id="C121035" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reaction of metals with water" id="C121166" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reaction of metals with water" id="C121166" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reaction of metals with oxygen" id="C121413" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reaction of metals with oxygen" id="C121413" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reaction of metals with acids" id="C121163" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reaction of metals with acids" id="C121163" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="What are ionic compounds?" id="s_969d978bb9be4b63b12c31c00e5ca520" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Ionic and Covalent Compounds" id="C121265" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Ionic and Covalent Compounds" id="C121265" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How are metals extracted?" id="s_1eb1174e40ab4a788cd35ce4f003a1d3" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Extraction of Metals" id="c121719" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Extraction of Metals" id="c121719" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Why metals rust?" id="s_3622bf487ba048299e4c6fa75bf38b31" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Rusting" id="C121414" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Rusting" id="C121414" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 4 -->
+    <ge display_name="CARBON AND ITS COMPOUNDS" id="c_6bf93bfabc274c16bbbbc4e02c28d5c2" demo_content="true" learning_status="0" unlocked="false" icon="/icon/tfu.png">
+
+        <ge display_name="How are carbon compounds grouped?" id="s_b63df559667644f1b870ae0e950968cf" demo_content="true" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Chemical Bonding - Covalent Bond" id="c121421" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Chemical Bonding - Covalent Bond" id="c121421" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+
+            </ge>
+
+            <ge display_name="Allotropy" id="C121014" demo_content="false" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Allotropy" id="C121014" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Alkanes" id="C121010" demo_content="false" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Alkanes" id="C121010" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Alkenes" id="C121397" demo_content="true" learning_status="0" unlocked="false" notes="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Alkenes" id="C121397" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Alkynes" id="C121012" demo_content="false" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Alkynes" id="C121012" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Aromatic hydrocarbons (arenes)" id="C121016" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Aromatic hydrocarbons (arenes)" id="C121016" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How are carbon compounds named?" id="s_d9e7259d7384401384e552e5e2802c2b" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="IUPAC nomenclature" id="C121116" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="IUPAC nomenclature" id="C121116" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="IUPAC nomenclature II" id="C121117" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="IUPAC nomenclature II" id="C121117" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="IUPAC nomenclature of alkenes" id="C121487" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="IUPAC nomenclature of alkenes" id="C121487" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="IUPAC nomenclature of alkynes" id="C121118" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="IUPAC nomenclature of alkynes" id="C121118" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Reactions of carbon compounds" id="s_37c1c1ac426d46248a7e2628bec4b372" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Addition reactions of alkenes" id="C121007" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Addition reactions of alkenes" id="C121007" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Examples of carbon compounds" id="s_e942090d096840b886b9d0c17d986267" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Ethyl Alcohol" id="c121737" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Ethyl Alcohol" id="c121737" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Ethanoic Acid" id="c121736" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Ethanoic Acid" id="c121736" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do soaps and detergents clean?" id="s_8aa3cb9bdf9a44569b4457fd5ef8ea3f" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Cleansing Action of Soaps and Detergents" id="c121722" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Cleansing Action of Soaps and Detergents" id="c121722" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 5 -->
+    <ge display_name="PERIODIC CLASSIFICATION OF ELEMENTS" id="c_91813f0d3dce4a92afa0e94d54c4a1f3" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png">
+
+        <ge display_name="How are elements classified?" id="s_c6f6acc1fc4343e897062ce388a5bbf3" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Dobereiner’s Law of Triads" id="C121663" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Dobereiner’s Law of Triads" id="C121663" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Newlands’ Law of Octaves" id="c121712" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Newlands’ Law of Octaves" id="c121712" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Mendeleev' S Periodic Table" id="WIP" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Mendeleev' S Periodic Table" id="WIP" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Periodic Table- classification of elements" id="C121417" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Periodic Table- classification of elements" id="C121417" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Periodic trends" id="C121018" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Periodic trends" id="C121018" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+</toc>

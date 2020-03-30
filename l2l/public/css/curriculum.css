@@ -1,0 +1,616 @@
+.custom-nav ul {
+    font-size: 12px;
+    font-family: 'robotomedium';
+    font-weight: 700;
+}
+
+.navbar-custom {
+    background: #fff;
+}
+
+.signup-customstyle:hover {
+    background-color: #ff0066 !important;
+    color: #fff !important;
+}
+
+.background1 {
+    background: url(../images/img_bg_map.svg) #2d2d54 no-repeat;
+    position: relative;
+    background-size: cover;
+
+}
+
+.container-top {
+    padding-top: 13em;
+}
+
+.main-heading {
+    color: #fff;
+    font-family: 'robotolight';
+    font-weight: normal;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.curriculum .label-style {
+    font-family: 'robotolight';
+    font-weight: normal;
+    font-size: 1.25em;
+    color: #fff;
+    padding-top: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.top-margin {
+    margin-top: 4.2em;
+}
+
+.curriculum .bootstrap-select .dropdown-toggle {
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #cdcdd9;
+    background: none;
+    border-radius: 0;
+}
+
+.curriculum .bootstrap-select > .dropdown-toggle.bs-placeholder {
+    /*font-size: 1.2em;*/
+    font-family: 'robotoregular';
+}
+
+.curriculum .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.curriculum .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li.selected > a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff0066 !important;
+}
+
+.curriculum .bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    color: #ff0066 !important;
+}
+
+.curriculum .bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    color: #ff0066 !important;
+    background: none;
+}
+
+.curriculum .bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+    outline: 0 auto !important;
+}
+
+.curriculum .btn-default {
+    color: #ff0066 !important;
+}
+
+.curriculum .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
+    background-color: #2d2d54;
+}
+
+.curriculum .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    display: none;
+}
+
+.curriculum .btn-show {
+    width: 152px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 25px;
+    font-family: 'robotoregular';
+    font-size: 1em;
+    text-align: center;
+    background-color: #ff0066;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.curriculum .button-margin {
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+
+.curriculum .dropdown-menu > li > a {
+    padding: 10px 20px;
+}
+
+.btn-subscribe {
+    width: 150px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 25px;
+    font-family: 'robotomedium';
+    font-size: 1.12em;
+    text-align: center;
+    background-color: #fff;
+    color: #2d2d54;
+    border: none;
+    outline: none;
+}
+
+/*.background2 {*/
+/*background: #ff0066;*/
+/*padding-top:20px;*/
+/*padding-bottom: 20px;*/
+/*}*/
+.background2 {
+    background: #e8ecf1;
+    position: relative;
+    min-height: 60%;
+}
+
+.text-font {
+    color: #fff;
+    font-size: 1.25em;
+    font-family: 'robotolight';
+}
+
+.img-center {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.logo-demo {
+    border: 2px solid #fff;
+    height: 50px;
+    width: 50px;
+    /*position: absolute;*/
+    border-radius: 50%;
+    /*right: 2.6em;*/
+    /*margin-top: -3.7em;*/
+    background: #fff;
+    display: flex;
+    /*align-items: center;*/
+}
+
+.padding-zero {
+    padding: 0;
+}
+
+.row-alignment {
+    display: flex;
+    align-items: center;
+}
+
+.heading-font {
+    color: #ff0066;
+    font-size: 1.125em;
+    font-family: 'robotomedium';
+}
+
+.logo-demo {
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.logo-demo.locked{
+    background: #c5d3d8;
+    border: 2px solid #fff;
+}
+
+.aliment-logo {
+    text-align: center;
+    margin-top: -36px;
+    border: 2px solid #ff0066;
+}
+
+.logo-border {
+    border: 2px solid #c5d3d8;
+    text-align: center;
+    margin-top: -36px;
+}
+
+.custom-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'robotomedium';
+    font-weight: 700;
+    color: #ff0066;
+    height: 46px;
+}
+
+.icon i {
+    color: #c0c0cb;
+}
+
+.font-sizes {
+    color: #c0c0cb;
+    font-size: 20px;
+}
+
+.subheading-font {
+    padding-top: 36px;
+    color: #333366;
+    font-size: 1.25em;
+    font-family: 'robotoregular';
+    font-weight: 700;
+}
+
+.concept-text {
+    font-size: 12px;
+    color: #c0c0cb;
+    padding-top: 10px;
+}
+
+.panel-body {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logo-background {
+    background-color: #c5d3d8;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-top: -36px;
+}
+
+.icon-background {
+    border: 1px solid #adb7ba;
+    height: 35px;
+    width: 35px;
+    line-height: 1.2;
+    text-align: center;
+    border-radius: 4px;
+    /* top: 0px; */
+}
+
+.font-color {
+    color: #adb7ba;
+}
+
+.panel {
+    border: 2px solid #dbe3e8;
+}
+
+.btn {
+    padding: 10px 12px;
+}
+
+.background-custom {
+    background-color: #c5d3d8;
+    border: 1px solid #fff;
+}
+
+.registrationdiv-alignment {
+    background: #49498c;
+    border: 2px solid #49498c;
+    border-radius: 8px;
+    /*width: 100%;*/
+    position: relative;
+    margin-top: -84px;
+    height: 170px;
+}
+
+.center-alignment {
+    display: flex;
+    align-items: center;
+}
+
+.registrationtext-font {
+    color: #fff;
+    font-family: 'robotoregular';
+    font-size: 1.7em;
+    letter-spacing: 2px;
+}
+
+.inputfield-style {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 10px;
+    outline: none;
+    padding-left: 20px;
+
+}
+
+.btn-started {
+    width: 100%;
+    /*height: 40px;*/
+    padding: 10px;
+    display: inline-block;
+    border-radius: 25px;
+    font-family: 'robotoregular';
+    font-size: 1em;
+    text-align: center;
+    background-color: #ff0066;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #49498c;
+    font-size: 1.1em;
+    font-family: 'robotolight';
+    font-weight: 700;
+}
+
+::-moz-placeholder {
+    color: #49498c;
+    font-size: 1.1em;
+    font-family: 'robotolight';
+    font-weight: 700;
+}
+
+:-ms-input-placeholder {
+    color: #49498c;
+    font-size: 1.1em;
+    font-family: 'robotolight';
+    font-weight: 700;
+}
+
+input[type="text"] {
+    color: #49498c;
+    font-size: 1.1em;
+    font-family: 'robotolight';
+    font-weight: 700;
+}
+
+.innerdiv-alignment {
+    padding-top: 28px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.text-font {
+    color: #49498c;
+    font-family: 'robotoregular';
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.subtext-font {
+    color: #49498c;
+    font-family: 'robotolight';
+    font-weight: 700;
+    font-size: 1.125em;
+}
+
+.icon-alignment {
+    background: #339dc3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 1.6;
+    text-align: center
+}
+
+.icon-color {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.social-icons img {
+    height: 40px;
+}
+
+.socialicons-align {
+    padding-left: 16px;
+}
+
+.subtext-padding {
+    padding-top: 24px;
+}
+
+.subtext-childpadding {
+    padding-top: 12px;
+}
+
+.horizontalline-color {
+    border-color: #d8dce5
+}
+
+.container-margin {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.icon-padding {
+    padding-right: 2px;
+}
+
+.row-margin {
+    padding-top: 40px;
+}
+
+.icons-alignment {
+    padding-top: 20px;
+    margin: 0;
+}
+
+.lockicon-font {
+    font-size: 20px;
+}
+
+.registerinputs-align {
+    padding-top: 30px;
+}
+
+.bottom-margin {
+    padding-bottom: 40px;
+}
+
+.div-alignment {
+    padding-top: 40px;
+}
+
+.error-padding {
+    padding-left: 23px;
+}
+
+#errorBox, #errorText {
+    /*padding-top: 5px;*/
+    color: #fff;
+    font-weight: bold;
+    margin-top: 3%;
+    min-height: 20px;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.text-wrap {
+    white-space: nowrap;
+    /*width: 16em;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.row-position {
+    position: relative;
+}
+
+.socialicons-position {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .inputfield-style {
+        font-size: 1.1em;
+        padding-left: 36px;
+    }
+
+    input[type="text"] {
+        font-size: 1.1em;
+    }
+
+    .btn-started {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .innerdiv-alignment {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .registrationdiv-alignment {
+        padding: 10px;
+    }
+
+    .registrationtext-font {
+        font-size: 1.5em;
+    }
+
+    .registerinputs-align {
+        padding-top: 16px;
+    }
+
+    .top {
+        padding-top: 8px;
+    }
+    .slick-margin {
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .innerdiv-alignment {
+        padding-bottom: 0px;
+    }
+
+    .registrationtext-font {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-heading {
+        font-size: 2em;
+    }
+
+    .top-margin {
+        margin-top: 2.2em;
+    }
+
+    .registrationtext-font {
+        font-size: 1em;
+    }
+
+    .registerinputs-align {
+        padding-top: 12px;
+    }
+
+    input[type="text"] {
+        font-size: 10px;
+    }
+
+    .inputfield-style {
+        font-size: 10px;
+        padding-left: 8px;
+        padding: 8px;
+    }
+
+    .text-font {
+        font-size: 1.1em;
+    }
+
+    .subtext-font {
+        font-size: 1.1em;
+    }
+
+    .btn-started {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+    .innerdiv-alignment {
+        padding-bottom: 0px;
+    }
+
+    .registrationtext-font {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 767px) {
+    .social-icons {
+        float: left;
+        margin-top: 16px;
+    }
+
+    .socialicons-position {
+        position: relative;
+    }
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.curriculum-lock{
+    height: 40%;
+}
+@media (max-width: 320px) {
+    .heading-font {
+        font-size: 12px;
+    }
+    .smallscreen-padding {
+        padding-left: 24px;
+    }
+}

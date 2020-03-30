@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+
+    <!--Styles-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+            rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/multi_language.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts/header_menu.js"></script>
+    <script src="js/scripts/index.js"></script>
+    <script src="js/scripts/social_redirect.js"></script>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container-fluid container-padding main-content">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top custom-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div>
+                    <button type="button" class="navbar-toggle home-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <a class="navbar-brand"><img class="img-responsive logo-dimensions"
+                                             src="images/lernwise_logo.svg"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1"
+                 aria-expanded="true">
+                <ul class="nav navbar-nav navbar-right navlist-center">
+                    <li>
+                        <a id="curriculum_nav" tkey="carriculam" class="" href="curriculum.html">CURRICULUM</a>
+                    </li>
+                    <li>
+                        <a class="" tkey="subscrption" href="subscription.html">SUBSCRIPTION</a>
+                    </li>
+                    <li class="profile-width">
+                        <a id="signin_nav" style="display: none" class="signin-customstyle"
+                           tkey="signin" href="sign_in.html">SIGN IN</a>
+                        <a id="profile_nav" style="display: none" class="signin-customstyle"></a>
+                    </li>
+                    <li class="signout-width">
+                        <a id="signup_nav" style="display: none; color: #fff;"
+                           class="signup-customstyle"
+                           tkey="signup" href="sign_up.html">SIGN UP FREE</a>
+                        <a id="signout_nav" style="display: none;color: #fff;" tkey="signout"
+                           class="signup-customstyle"
+                           onclick="signout()">SIGN OUT</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Lang
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a id="en" class="lang">EN</a></li>
+                                <li><a id="sp" class="lang">SP</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</div>
+<div class="background">
+    <div id="video-container">
+        <video id="bg_video" width="100%" src="images/B2C_Promo_Visuals.mp4"
+               playsinline autoplay muted
+               loop></video>
+        <div class="container container-top window-height">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h1 tkey="startpath" class="main-heading">Start the path to learn new science</h1>
+                <div class="demobutton-paddingtop"><a href="./content/nucleus.html">
+                    <button type="button" tkey="viewdemo" class="btn-common viewdemo-color" onclick="removeSavedDemoContent()">VIEW DEMO</button>
+                </a>
+                    <a class="subscribebutton-margin" href="subscription.html">
+                        <button type="button" tkey="subscribe" class="btn-common subscribe-color"> SUBSCRIBE</button>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="section-background">
+    <div class="container">
+        <div class="row center-align top">
+            <div class="col-md-8 col-sm-8 col-xs-12"><p class="leftborder-customstyle"><span tkey="newteaching"
+                    class="text-margin">New teaching in
+                    educational sphere</span></p>
+                <p tkey="teachingpara" class="subtext-font1">We all have been through those boring science lessons
+                    that never let you
+                    interact with what you are learning. Our mission is to bring the fun of
+                    science back and make students more involved and excited.</p></div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-center top"><img
+                    class="img-responsive img-width img-margin"
+                    src="images/icn_NewTeaching.svg" alt=""/></div>
+        </div>
+    </div>
+</section>
+<section class="section-background2">
+    <div class="container">
+        <div class="row center-align">
+            <div class="col-md-1 col-sm-1 col-xs-12"></div>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-12 text-center"><img class="images-font"
+                                                                          src="images/icn_richLearningContent.svg"
+                                                                          alt=""/>
+                    <h3 tkey="richlearning" class="image-titlefont">Rich Learning Content</h3></div>
+                <div class="col-md-4 col-sm-4 col-xs-12 text-center learningconcept-align top"><img
+                        class="images-font"
+                        src="images/icn_ InteractiveQuizzes.svg"
+                        alt=""/>
+                    <h3 tkey="interactive" class="image-titlefont"> Interactive Quizz</h3></div>
+                <div class="col-md-4 col-sm-4 col-xs-12 text-center learningconcept-align top"><img
+                        class="images-font"
+                        src="images/icn_selfpacedLearning.svg"
+                        alt=""/>
+                    <h3 tkey="selfpaced" class="image-titlefont">Self-PacedLeaning</h3></div>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-12"></div>
+        </div>
+
+    </div>
+</section>
+<div class="skewed-bg">
+    <div class="content">
+        <div class="background-brainimage">
+            <div><img class="image-brain-font" src="images/icn_AllAboutLearning.svg" alt=""/></div>
+        </div>
+        <h1 tkey="allabout" class="heading-font"> It's all about learning</h1>
+        <div class="row top-margin">
+            <div class="col-md-3 col-sm-3 col-xs-12"></div>
+            <div class="col-md-6 col-sm-6 col-xs-12"><p tkey="allaboutpara" class="subtext-font"> We all have been
+                through those boring
+                science lessons that
+                never let you interact with what you are learning. Our mission is to bring the
+                fun of science back and make students more involved and excited.</p></div>
+            <div class="col-md-3 col-sm-3 col-xs-3"></div>
+        </div>
+        <h1 tkey="joinover" class="heading2-font">Join over 1 million students already using scentric.</h1>
+        <div class="button-margin"><a>
+            <button tkey="joinnow" type="button" class="btn-join"> JOIN NOW</button>
+        </a></div>
+    </div>
+</div>
+<section class="section-background3">
+    <div class="section-background4">
+        <div class="content">
+            <div class="container text-center container-bg">
+                <div class="container-paddingtop"><span class="leftborder-font"></span><span tkey="dynamicpath"
+                        class="dynamictext-font">Dynamic learning path</span></div>
+                <div class="row">
+                    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                    <div class="col-md-10 col-sm-10 col-xs-12 row-alignment">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-5"></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 circle"><span><img
+                                    class="img-size" src="images/icn_Objective_home.svg"
+                                    height="60px" width="60px" alt=""/></span></div>
+                            <div class="col-md-5 col-sm-5 col-xs-5 text-left"><h3 tkey="objective"
+                                    class="learningpathheading-font">Objective</h3>
+                                <p tkey="objectivepara" class="learningpath-textfont">We all have been through those
+                                    boring science lessons that never let you interact with what you
+                                    are leaning.Our mission is to bring.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-5 text-right"><h3 tkey="overview"
+                                    class="learningpathheading-font">Overview</h3>
+                                <p tkey="overviewpara" class="learningpath-textfont">We all have been through those
+                                    boring science lessons that never let you interact with what you
+                                    are leaning.Our mission is to bring.</p></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 circle2"><span><img
+                                    class="img-size" src="images/icn_Overview.svg" height="60px"
+                                    width="60px" alt=""/></span></div>
+                            <div class="col-md-5 col-sm-5 col-xs-5">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-5"></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 circle"><span><img
+                                    class="img-size" src="images/icn_Learning.svg" height="60px"
+                                    width="60px" alt=""/></span></div>
+                            <div class="col-md-5 col-sm-5 col-xs-5 text-left"><h3 tkey="learning"
+                                    class="learningpathheading-font">learning</h3>
+                                <p tkey="learningpara" class="learningpath-textfont">We all have been through those
+                                    boring science lessons that never let you interact with what you
+                                    are leaning.Our mission is to bring.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-5 text-right"><h3 tkey="activity"
+                                    class="learningpathheading-font">Activity</h3>
+                                <p tkey="activitypara" class="learningpath-textfont">We all have been through those
+                                    boring science lessons that never let you interact with what you
+                                    are leaning.Our mission is to bring.</p></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 circle2"><span><img
+                                    class="img-size" src="images/icn_Activity_home.svg"
+                                    height="60px" width="60px" alt=""/></span></div>
+                            <div class="col-md-5 col-sm-5 col-xs-5">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-5"></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 circle"><span><img
+                                    class="img-size" src="images/icn_Application.svg" height="60px"
+                                    width="60px" alt=""/></span></div>
+                            <div class="col-md-5 col-sm-5  col-xs-5 text-left"><h3 tkey="application"
+                                    class="learningpathheading-font">Application</h3>
+                                <p tkey="applicationpara" class="learningpath-textfont">We all have been through those
+                                    boring science lessons that never let you interact with what you
+                                    are leaning.Our mission is to bring.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5 col-xs-5 text-right"><h3 tkey="challenge"
+                                    class="learningpathheading-font">Challenge</h3>
+                                <p tkey="challengepara" class="learningpath-textfont">We all have been through those
+                                    boring science lessons that never let you interact with what you
+                                    are leaning.Our mission is to bring.</p></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2"><span><img class="img-size"
+                                                                               src="images/icn_Challenge.svg"
+                                                                               height="60px"
+                                                                               width="60px" alt=""/></span>
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-xs-5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section class="section-background5">
+    <div class="container text-center bottom-margin">
+        <div class="registrationdiv-alignment">
+            <div class="innerdiv-alignment">
+                <span tkey="register-and-start" class="registrationtext-font">Register and start learning by adding</span>
+                <div class="row registerinputs-align">
+                    <div class="col-md-3 col-sm-6 col-xs-6"><input class="inputfield-style"
+                                                                   name="name"
+                                                                   type="text"
+                                                                   placeholder="Your Name "
+                                                                   class="validate"
+                                                                   id="user_name"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><input class="inputfield-style"
+                                                                   name="email"
+                                                                   type="text"
+                                                                   placeholder="Email Address"
+                                                                   class="validate"
+                                                                   id="user_email"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 smallscreen-topmargin"><input
+                            class="inputfield-style"
+                            name="password"
+                            type="password"
+                            placeholder="Create Password"
+                            class="validate"
+                            id="user_pwd"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 smallscreen-topmargin"><a>
+                        <button tkey="getstarted" type="button" class="btn-started" id="register">GET STARTED</button>
+                    </a></div>
+                </div>
+                <div id="errorBox"></div>
+            </div>
+        </div>
+    </div>
+    <hr class="horizontalline-color">
+    <div class="container container-margin">
+        <div class="row row-position">
+            <div class="col-md-7 col-sm-8 col-xs-12">
+                <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/icn_Logo symbol.svg"
+                                                              width="40px" alt=""/>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5"><h4 tkey="learnmore" class="text-font">LEARN MORE</h4>
+                    <h5 tkey="pricing" type="pricing" class="subtext-font3 subtext-padding">Pricing and plans</h5>
+                    <h5 tkey="contact" class="subtext-font3 subtext-childpadding">Contact</h5>
+                    <h5 tkey="Términos y privacidad" class="subtext-font3 subtext-childpadding">Privacy&terms </h5>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 padding-zero footer-textpadding">
+                    <h4 tkey="support" class="text-font">Support</h4>
+                    <h5 tkey="demo" class="subtext-font3 subtext-padding">Demo</h5>
+                    <h5 tkey="terms-service" class="subtext-font3 subtext-childpadding">Terms of service</h5>
+                    <h5 tkey="Security" class="subtext-font3 subtext-childpadding">Security</h5>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12 socialicons-position"><span
+                    class="social-icons">
+            <a target="_self" class="fb socialicons-align"
+               onclick="social_login('facebook')">
+            <img class="img-responsive" src="images/icn_Facebook.svg"
+                 alt="facebook">
+            </a>
+            <a target="_self" class="google-plus socialicons-align"
+               onclick="social_login('googleplus')">
+            <img class="img-responsive" src="images/icn_Googleplus.svg"
+                 alt="googleplus">
+            </a>
+            <a class="socialicons-align"><img class="img-responsive" src="images/icn_Twitter.svg"
+                                              alt="twitter"></a>
+           </span></div>
+        </div>
+    </div>
+</section>
+<a href="dashboard.html"><button type="button">Learning Path</button></a>
+
+<script>
+    localStorage.setItem('previousUrl', window.location.href);
+</script>
+</body>
+</html>

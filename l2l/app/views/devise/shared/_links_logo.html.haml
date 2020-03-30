@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %title Scentric
+
+
+    =stylesheet_link_tag "http://fonts.googleapis.com/icon?family=Material+Icons"
+    =stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+    -#%link{href: "http://fonts.googleapis.com/icon?family=Material+Icons", rel:"stylesheet"}
+    -#%link{href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese", rel:"stylesheet"}
+    =stylesheet_link_tag "materialize.css"
+    =stylesheet_link_tag "bootstrap.min.css"
+    =stylesheet_link_tag "styles.css"
+    =stylesheet_link_tag "common.css"
+    =stylesheet_link_tag "mediaqueries.css"
+
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
+
+  %body
+    .container-fluid.full-height
+      .form-screen.full-height
+        .row.full-height
+          .col-md-12.col-xs-12.col-sm-12.full-height.no-gutter
+            .col-md-4.col-sm-5.col-xs-12.no-gutter.full-height.m-height
+              .aside-left.full-height
+                .col-md-12.col-sm-12.full-height
+                  %a.logo{href:'#'}
+                    =image_tag("scentruc_logo.svg")

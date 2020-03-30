@@ -1,0 +1,162 @@
+.custom-nav ul {
+    font-size: 12px;
+    font-family: 'robotomedium';
+}
+
+.custom-nav ul li a {
+    color: #272930;
+
+}
+.nav-color {
+    background: #fff;
+}
+.signup-customstyle:hover {
+    background-color: #ed4079 !important;
+
+}
+
+.signin-customstyle {
+    border: 1px solid #272930;
+    margin-right: 0;
+}
+
+.signin-custom1 {
+    border: 1px solid #939497;
+    padding: 8px !important;
+    border-radius: 50px;
+    color: #272930;
+    text-align: -webkit-center;
+    width: 110px;
+}
+
+.backgroundImage3 {
+    background-color: #f7f9fb;
+}
+
+.subscription_products .content-margin {
+    padding-top: 150px;
+}
+
+.subscription_products .main-heading {
+    font-family: 'robotomedium';
+    font-size: 2.7em;
+    color: #272930;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.subscription_products .context {
+    color: #838384;
+    font-family: 'robotoregular';
+    font-size: 1.125em;
+    width: 80%;
+}
+
+.subscription_products .form-select select {
+    border: none;
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: solid 1px #b2b2b2;
+    transition: border 0.3s;
+    color: #8a8c93;
+    font-family: 'robotolight';
+    font-size: 1.125em;
+}
+
+.subscription_products .subscription-dropdown select {
+    background: #f7f9fb;
+    color: #ed4079;
+    border-bottom: 2px solid #8f9195;
+    outline: none;
+}
+
+.subscription_products .subscription-dropdown label {
+    font-family: 'robotoregular';
+    font-size: 1.125em;
+    color: #272930;
+}
+
+.subscription_products .button-margin {
+    margin-top: 50px;
+}
+
+.subscription_products .btn4 {
+    width: 360px;
+    height: 50px;
+    display: inline-block;
+    color: white;
+    background-color: #ed4079;
+    border-radius: 25px;
+    font-family: 'robotoregular';
+    font-size: 1.125em;
+    text-align: center;
+    border: none;
+}
+
+.subscription_products .thumbnail {
+    display: block;
+    padding: 0px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: #b2b2b2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.subscription_products.caption img {
+    border-radius: 4px;
+}
+
+.subscription_products .logo-demo {
+    border: 2px solid #fff;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    right: 2.6em;
+    margin-top: -3.7em;
+    background: #272930;
+    display: flex;
+    align-items: center;
+}
+
+.subscription_products .custom-logo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.subscription_products .grade-txt {
+    font-family: 'robotoregular';
+    font-size: 1.125em;
+    color: #666666;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.subscription_products .sub-context {
+    font-family: 'robotoregular';
+    font-size: 1.125em;
+    margin-top: 14px;
+    margin-bottom: 60px;
+    color: #666666;
+
+}
+
+.subscription_products .icon i {
+    color: #b2b2b2;
+}
+
+.subscription_products .font-sizes {
+    color: #b2b2b2;
+    font-size: 20px;
+}

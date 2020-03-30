@@ -1,0 +1,255 @@
+/*fonts*/
+
+@font-face {
+	font-family: 'robotobold';
+	src: url('/assets/roboto-bold-webfont.woff2') format('woff2'),
+		 url('/assets/roboto-bold-webfont.woff') format('woff'),
+		 url('/assets/roboto-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotoitalic';
+	src: url('/assets/roboto-italic-webfont.woff2') format('woff2'),
+		 url('/assets/roboto-italic-webfont.woff') format('woff'),
+		 url('/assets/roboto-italic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotolight';
+	src: url('/assets/roboto-light-webfont.woff2') format('woff2'),
+		 url('/assets/roboto-light-webfont.woff') format('woff'),
+		 url('/assets/roboto-light-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotomedium';
+	src: url('/assets/roboto-medium-webfont.woff2') format('woff2'),
+		 url('/assets/roboto-medium-webfont.woff') format('woff'),
+		 url('/assets/roboto-medium-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotoregular';
+	src: url('/assets/roboto-regular-webfont.woff2') format('woff2'),
+		 url('/assets/roboto-regular-webfont.woff') format('woff'),
+		 url('/assets/roboto-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'robotothin';
+	src: url('/assets/roboto-thin-webfont.woff2') format('woff2'),
+		 url('/assets/roboto-thin-webfont.woff') format('woff'),
+		 url('/assets/roboto-thin-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.row {
+	margin-bottom: 0;
+}
+
+.clear {
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+	color: #fff;
+}
+
+.margin-top-50 {
+	margin-top: 50px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #58595e;
+}
+
+label {
+	font-weight: normal;
+}
+
+.no-gutter-left {
+	padding-left: 0;
+}
+
+.no-gutter-right {
+	padding-right: 0;
+}
+
+.no-gutter {
+	padding: 0;
+}
+
+.main-heading {
+	font-size: 28px;
+	color: #272930;
+	font-weight: 300;
+}
+
+.tcell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.main-form .input-field label {
+	font-size: 14px;
+	color: #58595e;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: left;
+}
+
+.sub-heading {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 20px 0 50px 0;
+	font-weight: 400;
+}
+
+.input-field {
+	position: relative;
+}
+
+.head-section {
+	text-align: left;
+}
+
+.input-field .forgot-password {
+	position: absolute;
+	top: 9px;
+	right: 0;
+	color: #8a8c93;
+	font-size: 12px;
+	font-family: 'robotolight';
+	text-decoration: none;
+}
+
+.main-form input:not([type]), .main-form input[type=text], .main-form input[type=password], .main-form input[type=email], .main-form input[type=url], .main-form input[type=time], .main-form input[type=date], .main-form input[type=datetime], .main-form input[type=datetime-local], .main-form input[type=tel], .main-form input[type=number], .main-form input[type=search], textarea.materialize-textarea {
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 400;
+	color: #8a8c93;
+}
+
+.login-sec {
+	width: 100%;
+	margin: 20px 0 50px 0;
+	display: inline-block;
+	text-align: left;
+	line-height: 50px;
+}
+
+.login-btn {
+	width: 70.62%;
+	height: 50px;
+	line-height: 50px;
+	padding: 0;
+	border-radius: 25px;
+	background: #ed4079;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.login-sec .or-txt {
+	color: #8a8c93;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 50px;
+}
+
+.social-icons {
+	float: right;
+	text-align: right;
+}
+
+.social-icons a {
+	margin-left: 10px;
+}
+
+.social-icons a.fb {
+	margin-left: 0;
+}
+
+.social-icons a img {
+	height: 40px;
+}
+
+.btm-section {
+	/*margin-left: 24%;*/
+	text-align: left;
+}
+
+.dnt-have-acct p {
+	color: #585953;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.dnt-have-acct p a {
+	margin-left: 2%;
+	color: #ed4079;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+	outline: none;
+}
+
+.login-btn:hover, .login-btn:focus {
+	background-color: #bf2664;
+}
+
+.select-drpdwn .select-dropdown {
+	float: left;
+	font-size: 18px !important;
+	margin: 15px 0 20px 0 !important;
+	font-weight: 300;
+	/*padding-left: 10px !important;*/
+	padding-bottom: 10px !important;
+}
+
+.select-drpdwn .dropdown-content {
+	top: 6px !important;
+	padding-left: 0 !important;
+	max-height: 350px !important;
+}
+
+.select-drpdwn .select-wrapper span.caret {
+	top: 66px;
+	font-size: 0;
+	background: url("/assets/dropdown.svg") no-repeat left center;
+	width: 12px;
+}
+
+.terms-cond-sec, .dnt-have-acct {
+	padding-left: 2px;
+}
+
+.main-form input:not([type]), .main-form input[type=text], .main-form input[type=password], .main-form input[type=email], .main-form input[type=url], .main-form input[type=time], .main-form input[type=date], .main-form input[type=datetime], .main-form input[type=datetime-local], .main-form input[type=tel], .main-form input[type=number], .main-form input[type=search], .main-form textarea.materialize-textarea {
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.margin-top-30 {
+	margin-top: 30px;
+}

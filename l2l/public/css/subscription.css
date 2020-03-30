@@ -1,0 +1,354 @@
+.custom-nav ul {
+    font-size: 12px;
+    font-family: 'robotomedium';
+    font-weight: 700;
+}
+
+.custom-nav ul li a {
+    color: #fff;
+
+}
+
+/*.backgroundImage2 {*/
+/*background: url('../images/backgroundImage2.png');*/
+/*position: relative;*/
+/*height: 450px;*/
+/*}*/
+
+.content-topmargin {
+    margin-top: 6%;
+}
+
+.background {
+    background: url('../images/triangle_background.svg');
+    position: relative;
+    background-size: cover;
+
+}
+
+.container-alignment {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0;
+}
+
+.subscription .main-heading {
+    font-family: 'robotomedium';
+    font-size: 2.7em;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.subscription .sub-heading {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.subscription .sub-content {
+    font-family: 'robotolight';
+    margin-top: 60px;
+    color: #585953;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.subscription .form-margin {
+    margin-top: 60px;
+}
+
+.subscription .form-select option {
+    background: #4c5265;
+    position: relative;
+    top: 10px;
+}
+
+.subscription .form-select select {
+    border: none;
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: solid 2px #272930;
+    transition: border 0.3s;
+    color: #8a8c93;
+    font-family: 'robotolight';
+    font-size: 1.125em;
+    outline: none;
+}
+
+.subscription .form-dropdownSelect select {
+    appearance: none;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    background: transparent url('../images/angle-arrow-down.png') no-repeat right center;
+}
+
+.subscription .label-style {
+    font-family: 'robotolight';
+    font-weight: normal;
+    font-size: 1.125em;
+    color: #272930;
+    padding-top: 20px;
+}
+
+.subscription .padding-top20 {
+    padding-top: 20px;
+}
+
+.subscription .text-margin {
+    margin-top: 30px;
+}
+
+.subscription .panel-default > .panel-heading {
+    color: #fff;
+    background-color: #272930;
+    border-color: #272930;
+    font-size: 24px;
+    font-family: 'robotolight';
+}
+
+.subscription .panel-heading {
+    padding: 15px 15px;
+}
+
+.sub-heading .panel-body {
+    padding: 30px;
+    color: #8a8c93;
+    font-family: robotoregular;
+    font-size: 18px;
+}
+
+.subscription .cart-heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    font-family: 'robotomedium';
+}
+
+.subscription .custom-logo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #2d2d54;
+}
+
+.subscription .logo-cart {
+    border: 2px solid #fff;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    /* margin-top: -4px; */
+    right: 0;
+    top: -25px;
+    left: 0;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.subscription .grade-font {
+    font-family: 'robotoregular';
+    font-size: 1.125em;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.subscription .sub-font {
+    font-family: 'robotoregular';
+    font-size: 1.25em;
+    color: #ed4079;
+}
+
+.sub-heading .cart-margin {
+    margin-top: 10px;
+}
+
+.subscription .horizontal {
+    border-top: 3px dashed #5f607e;
+}
+
+.subscription .cart-total {
+    font-family: 'robotoregular';
+    font-size: 1.6em;
+    color: #fff;
+}
+
+.subscription .checkout {
+    padding-top: 36px;
+}
+
+.subscription .btn-height {
+    height: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+.subscription .bootstrap-select .dropdown-toggle {
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #272930;
+    background: none;
+    border-radius: 0;
+}
+
+.subscription .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.subscription .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li.selected > a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ed4079 !important;
+}
+
+.subscription .bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    color: #ed4079 !important;
+}
+
+.subscription .bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:active, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    color: #ed4079 !important;
+    background: none;
+}
+
+.subscription .bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+    outline: 0 auto !important;
+}
+
+.subscription .btn-default {
+    color: #ed4079 !important;
+}
+
+.subscription .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
+    background-color: #fff;
+}
+
+.subscription .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+    display: none;
+}
+
+.subscription .panel-footer {
+    padding: 24px;
+    background-color: #70ceab;
+    text-align: center;
+    border-top: 0;
+    cursor: pointer;
+}
+
+.subscription .checkout {
+    color: #fff;
+    font-family: 'robotomedium';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.subscription .panel-body {
+    background: #2d2d54;
+    border-radius: 6px;
+}
+
+.signin-custom2 {
+    border: 1px solid #9696a9;
+    padding: 8px !important;
+    border-radius: 50px;
+    text-align: -webkit-center;
+    width: 110px;
+}
+
+.subscription .panel-align {
+    padding: 15px 30px 15px 30px;
+
+}
+
+.subscription .panel {
+    border-radius: 6px;
+    background: #2d2d54;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+.signup-margin {
+    margin-left: 20px;
+}
+
+.signup-customstyle:hover {
+    background-color: #ed4079 !important;
+
+}
+
+.subscription .dropdown-menu > li > a {
+    padding: 10px 20px;
+}
+
+#errorBox {
+    padding-top: 15px;
+    color: #ed4079;
+    font-weight: bold;
+}
+
+.signin-customstyle {
+    border: 1px solid #272930;
+}
+
+.close-button {
+    color: #fff;
+    width: 18px;
+    padding-right: 6px
+}
+
+.add-icon-font {
+    width: 24px;
+    background: #ed4079;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.subtext-font {
+    color: #8f8fa4;
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 16px;
+    font-family: 'robotomedium';
+}
+
+.image-size {
+    width: 100%;
+    height: 22vh;
+}
+
+@media (max-width: 767px) {
+    .navbar-custom {
+        background: #fff;
+    }
+
+    .panelmargin-top {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-nav ul {
+        font-size: 11px;
+    }
+}
+
+.navbar-custom {
+    background: #FFF;
+}

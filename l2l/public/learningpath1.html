@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/learningpath1.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/scripts/learningpath_home.js"></script>
+
+</head>
+<body>
+<div id="preloader"></div>
+<nav id="main_menu" class="navbar navbar-default concept-nav concept" role="navigation">
+    <div class="container ">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo_icon" class="navbar-brand logo-alignment">
+                <img class="img-responsive learningpath-logo-dimensions"
+                     src="images/icn_lernwise.svg"/>
+            </a>
+            <a class=" navbar-brand logo-alignment conceptlink-alignment"
+               href="./content/nucleus.html"><i class="fa fa-angle-left angleicon-font"
+                                                aria-hidden="true"></i><span
+                    class="conceptlink-spacing">Back to concepts</span></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="top-itemlist nav navbar-nav">
+                <li id="content_1"><a class="objective active" href="learningpath1.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_2" class="learning-content-disable"><a class="conceptmap" href="concept-map/concept_map.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_3" class="learning-content-disable"><a class="video" href="learningpath_video.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_4" class="learning-content-disable"><a class="activity" href="keywords.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_5" class="learning-content-disable"><a class="practicequiz" href="practice_quiz.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_6" class="learning-content-disable"><a class="assessment" href="#"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="col-md-6 col-sm-6 col-xs-12 window-height">
+        <h2 id="topic_name"></h2>
+        <p class="concept-text" id="topic_description"></p>
+        <div class="outcomes">
+            <h4>LEARNING OUTCOMES</h4>
+            <div class="subcontent-paddingtop" id="learning_outcomes"></div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 socialdiv-alignment">
+            <div class="row images socialicons-alignmnet">
+                <div class="col-md-4 col-sm-4 col-xs-6"><img src="images/testmonial.jpg"/><img
+                        src="images/testmonial.jpg"/><img src="images/testmonial.jpg"/></div>
+                <div class="col-md-3 col-sm-3 col-xs-6"><span>121</span>
+                    <p>People learn</p></div>
+                <div class="col-md-1 col-sm-1 col-xs-1"><span class="divider"></span></div>
+                <div class="col-md-2 col-sm-2 col-xs-2 icons">
+                    <div class="shareicon-style"><i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2 icons">
+                    <div class="facebookicon-style"><i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="button-paddingtop"><a href="concept-map/concept_map.html">
+                <button type="button" class="btn-start">GET STARTED</button>
+            </a></div>
+        </div>
+
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 window-height smallscreen-padding" id="outcome_image">
+        <span></span></div>
+</div>
+</body>
+</html>

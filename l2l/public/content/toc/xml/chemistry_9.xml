@@ -1,0 +1,479 @@
+<toc version="1" lang="en" icon="/icon/bio.png" display_name="Chemistry" learning_engine="disabled">
+
+  <!-- Chapter 1-->
+  <ge display_name="MATTER IN OUR SURROUNDINGS" icon="/icon/tfu.png" id="c_d8e89355b02e42b2be6e4b7ca8fa8b70" demo_content="false" learning_status="0" unlocked="false">
+
+    <ge display_name="Arrangement and movement of molecules in matter" icon="" id="s_172ed86ed6034528892699695b1a9661" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Molecular arrangement in matter" icon="" id="C121428" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Molecular arrangement in matter" id="C121428" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121428.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Brownian movement" icon="" id="C121437" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Brownian movement" id="C121437" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121437.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="What are the different states of matter" icon="" id="s_90c11ab729fe4f97954c501cd70930e7" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="States of matter" icon="" id="C121408" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="States of matter" id="C121408" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121408.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="How matter changes its states?" icon="" id="s_8d4ee41846f24f7b874f58726eb64a2e" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Changes in the states of matter" notes="false" icon="" id="C121237" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Changes in the states of matter" id="C121237" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121237.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Effects of pressure on states of matter" icon="" id="P121714" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Effects of pressure on states of matter" id="P121714" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/P121714.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Factors Affecting Evaporation" icon="" id="C121638" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Factors affecting evaporation" id="C121638" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121638.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+  </ge>
+
+  <!-- Chapter 2 -->
+  <ge display_name="IS MATTER AROUND US PURE" icon="/icon/tfu.png" id="c_11e7848fc33a42e98f8de77508d2637d" demo_content="false" learning_status="0" unlocked="false">
+
+    <ge display_name="Substances --pure and mixtures" icon="" id="s_7030302d40f747baa0f362df8de8dc5b" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Pure Substance and Mixtures" icon="" id="P121712" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Pure Substance and Mixtures" id="P121712" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/P121712.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Homogenous Mixtures" icon="" id="C121703" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Homogenous mixtures" id="C121703" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121703.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Heterogeneous Mixtures" icon="" id="C121704" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Heterogeneous mixtures" id="C121704" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121704.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="How mixtures are separated?" icon="" id="s_44be1c0ed1074645a31e9c829798efe5" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Separation of mixtures" icon="" id="C121411" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Separation of mixtures" id="C121411" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121411.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Separation of Immiscible Liquid Mixtures" icon="" id="C121716" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Separation of Immiscible Liquid Mixtures" id="C121716" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121716.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Paper chromatography" icon="" id="Z121080" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Paper chromatography" id="Z121080" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/Z121080.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Fractional Distillation" icon="" id="C121718" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Fractional Distillation" id="C121718" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121718.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="What are Solutions" icon="" id="s_27d777a632cc4ed7acb2a393935113e8" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Solutions" icon="" id="C121732" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Solutions" id="C121732" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121732.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Solubitlity in Solutions" icon="" id="C121254" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Solubitlity in Solutions" id="C121254" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121254.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="Are colloids solutions?" icon="" id="s_32a9e3bb5c3f4eab837ffeec4a75f3b5" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Properties of a Colloid" icon="" id="C121349" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Properties of a Colloid" id="C121349" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121349.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="What are elements made of?" icon="" id="s_ae4674bc192f415095bd6899766eec39" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Atoms and Elements" icon="" id="C121634" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Atoms and Elements" id="C121634" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121634.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Atomic Mass" icon="" id="C121435" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Atomic mass" id="C121435" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121435.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Molar Mass" icon="" id="C121718" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Molar mass" id="C121648" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121648.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Mole Concept" icon="" id="C121380" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Mole concept" id="C121380" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121380.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+  </ge>
+
+  <!-- Chapter 3 -->
+  <ge display_name="ATOMS AND MOLECULES" icon="/icon/tfu.png" id="c_e1c75a935e034845b231dc64c2078860" demo_content="false" learning_status="0" unlocked="false">
+
+    <ge display_name="How chemicals combine?" icon="" id="s_3a55876a9ef341109adefc17c4a76e93" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Physical And Chemical Changes" icon="" id="C121432" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Physical And Chemical Changes" id="C121432" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121432.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Mixtures and compounds" icon="" id="C121412" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Mixtures and compounds" id="C121412" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121412.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Molecules and compounds" icon="" id="C121636" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Molecules and compounds" id="C121636" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121636.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Ions, cations and anions" icon="" id="C121632" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Ions, cations and anions" id="C121632" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121632.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Polyatomic ions" icon="" id="C121147" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Polyatomic ions" id="C121147" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121147.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="Laws Of Chemical Combination" icon="" id="s_c4963a5061a64247b6ccbb9c8f9883cd" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="The law of conservation of mass in chemical reactions" notes="false" icon="" id="C121425" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="The law of conservation of mass in chemical reactions" id="C121425" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121425.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Law of definite proportions" icon="" id="C121313" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Law of definite proportions" id="C121313"  CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121313.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="How to write Chemical Formula?" icon="" id="s_46b58452386246a88d253823446bfcec" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Writing chemical formula using valences" icon="" id="C121089" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Writing chemical formula using valences" id="C121089" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121089.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+  </ge>
+
+  <!-- Chapter 4 -->
+  <ge display_name="STRUCTURE OF THE ATOM" icon="/icon/tfu.png" id="c_fe5d21e0bc954b7ca01357dfe8477aad" demo_content="true" learning_status="0" unlocked="false">
+
+    <ge display_name="How were atoms explained?" icon="" id="s_7f39acb7c6194d4f884272f8a7c018b9" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="Thomson’s atomic model" icon="" id="C121645" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Thomson’s atomic model" id="C121645" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121645.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Rutherford’s atomic model" icon="" id="C121315" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Rutherford’s atomic model" id="C121315" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121315.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Atomic model proposed by Bohr" icon="" id="C121303" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Atomic model proposed by Bohr" id="C121303" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121303.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Neutrons" icon="" id="C121647" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Neutrons" id="C121647" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121647.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="How are electrons arranged in atoms?" icon="" id="s_a3d0cd9bf2b746d5b9c2f849381baf4d" demo_content="true" learning_status="0" unlocked="false">
+
+      <ge display_name="Electronic configuration of elements" icon="" id="C121278" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Electronic configuration of elements" id="C121278" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121278.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Atomic orbitals" icon="" id="C121334" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Atomic orbitals" id="C121334" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121334.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Valency" icon="" id="C121199" demo_content="true" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Valency" id="C121199" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121199.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+    <ge display_name="How atomic nucleus changes the atoms?" icon="" id="s_5f3570f63d6149b8832557a5e3fe56f8" demo_content="false" learning_status="0" unlocked="false">
+
+      <ge display_name="General Structure of Atomic Nucleus" icon="" id="P121252" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="General Structure of Atomic Nucleus" id="P121252" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/P121252.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Isotopes" icon="" id="C121195" demo_content="false" notes="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Isotopes" id="C121195" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121195.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Isotopes of hydrogen" icon="" id="C121115" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Isotopes of hydrogen" id="C121115" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121115.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Isotopes of carbon" icon="" id="C121306" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Isotopes of carbon" id="C121306" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121306.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+      <ge display_name="Isobars and Isotones" icon="" id="C121711" notes="false" demo_content="false" learning_status="0" unlocked="false">
+
+        <ce icon="icon/video.png" display_name="Isobars and Isotones" id="C121711" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600" url="/videos/C121711.mp4">
+          <flow_rule>
+            usage = 500
+          </flow_rule>
+        </ce>
+
+      </ge>
+
+    </ge>
+
+  </ge>
+
+</toc>

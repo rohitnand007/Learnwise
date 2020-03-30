@@ -1,0 +1,18 @@
+{
+  "name": "concept-map",
+  "description": "React component integration",
+  "main": "",
+  "authors": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tincan": "^0.50.0"
+  }
+}

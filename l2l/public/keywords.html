@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+    <link href="css/keywords.css" rel="stylesheet" type="text/css">
+    <link href="css/activity_modal.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/scripts/keywords.js"></script>
+    <script src="js/controllers/user_control.js"></script>
+
+</head>
+<body>
+<div id="preloader"></div>
+<nav id="main_menu" class="navbar navbar-default concept-nav concept" role="navigation">
+    <div class="container">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo_icon" class="navbar-brand logo-alignment">
+                <img class="img-responsive learningpath-logo-dimensions"
+                     src="images/icn_lernwise.svg"/>
+            </a>
+            <a class="navbar-brand logo-alignment conceptlink-alignment"
+               href="./content/nucleus.html"><i class="fa fa-angle-left angleicon-font"
+                                                aria-hidden="true"></i><span
+                    class="conceptlink-spacing">Back to concepts</span></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="top-itemlist nav navbar-nav">
+                <li id="content_1"><a class="objective" href="learningpath1.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_2"><a class="conceptmap" href="concept-map/concept_map.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_3"><a class="video" href="learningpath_video.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_4"><a class="activity active" href="keywords.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_5" class="learning-content-disable"><a class="practicequiz" href="practice_quiz.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_6" class="learning-content-disable"><a class="assessment" href="#"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="section-bg">
+    <div class="logo-demo">
+        <span class="custom-logo" id="option_status_carousel">Let's Start<div><img
+                src="images/icn_letsStart.svg" width="123" height="52" alt=""/></div></span>
+    </div>
+    <div class="pull-right keywords-serial-number">
+        <span id="current-keyword-number" class="padding-5"></span>/<span id="total-keywords-number"
+                                                                          class="padding-5">12</span>
+    </div>
+    <div class="container content" style="height: 0;">
+        <div id="carousel-example-generic" class="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" id="keywords_explanation_carousel">
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <i
+                    class="fa fa-angle-left icon-background" aria-hidden="true"></i></a>
+            <a class="right carousel-control cursor-pointer" id="carousel_next"><i
+                    class="fa fa-angle-right icon-background" aria-hidden="true"></i> </a>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div style="padding-top: 40px;">
+        <h6 class="text-center text-small"><span id="option_click_status_text"></span></h6>
+        <div id="keywords_options"></div>
+        <!--<div class="row" style="padding-top: 40px;">
+            <div class="col-md-3"><a><button type="button" class="btn1">Cell wall</button></a></div>
+            <div class="col-md-3"><a><button type="button" class="btn2">Cellulose</button></a></div>
+            <div class="col-md-3"><a><button type="button" class="btn1">Chitin</button></a></div>
+            <div class="col-md-3"><a><button type="button" class="btn1">Peptidoglycan</button></a></div>
+        </div>-->
+    </div>
+</div>
+<div id="activity_hint_modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <!--<span class="close" data-dismiss="modal">&times;</span>-->
+        <div class="text-center" id="keyword_hint">
+        </div>
+        <div class="text-center">
+            <i class="fa fa-times-circle-o fa-2x cursor-pointer" data-dismiss="modal"
+               aria-hidden="true"></i>
+            <div>Back to activity</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="activity-start-modal" role="dialog">
+    <div class="modal-dialog modal-dialogWidth">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+            <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            <!--<h4 class="modal-title">Modal Header</h4>-->
+            <!--</div>-->
+            <div class="modal-body">
+                <section class="section1-padding">
+                    <h3 class="text-center heading-font">It's time for an activity!</h3>
+                    <p class="text-center activity-modal-subtext-font">Something new, something fun
+                        and something quick in
+                        an exciting way</p>
+                </section>
+                <section class="activity-modal-section-bg"><span><img class="img-responsive"
+                                                                      src="images/icn_getStarted.svg"></span>
+                </section>
+                <section class="section3-padding">
+                    <div class="text-center">
+                        <a>
+                            <button type="button" class="btn-start" id="activity-modal-close">GET
+                                STARTED
+                            </button>
+                        </a>
+                    </div>
+                    <div class="text-center padding-top"><input class="cb" type="checkbox"
+                                                                id="check1"><label for="check1">Don't
+                        show this
+                        again
+                    </label></div>
+                </section>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--<script>-->
+    <!--$("#activity-start-modal").modal('show');-->
+<!--</script>-->
+</body>
+</html>

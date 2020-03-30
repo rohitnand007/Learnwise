@@ -1,0 +1,201 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+}
+/*.navbar-custom .nav li a {
+    color: #fff;
+    !*padding: 20px;*!
+    font-family: 'robotoregular';
+    font-size: 1.12em;
+    cursor: pointer;
+}
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
+    color: #fff;
+}
+.navbar-custom {
+    background: 0 0;
+    border-bottom: 1px solid transparent;
+}*/
+.signin-customstyle {
+    border: 2px solid #fff;
+}
+/*.signin-custom1 {*/
+    /*border: 2px solid #fff;*/
+    /*padding: 8px !important;*/
+    /*border-radius: 50px;*/
+    /*color: #272930;*/
+    /*text-align: -webkit-center;*/
+    /*width: 110px;*/
+/*}*/
+.navbar-toggle {
+    margin-top: 18px;
+}
+
+.background {
+    height: 100%;
+    position: relative;
+    background: url("../images/backgroundImage3.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.center {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.center-align {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.padding-LR0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.arrows i {
+    font-size: 6em;
+    color: #fff;
+}
+
+.icon-style {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+/*h1, a {*/
+    /*!*text-align: center;*!*/
+    /*text-decoration: none;*/
+    /*color: #3399FF;*/
+    /*font-weight: bold;*/
+/*}*/
+
+.btn-concept {
+
+    width: 240px;
+    height: 50px;
+    display: inline-block;
+    color: #ed4079;
+    background-color: #fff;
+    border-radius: 25px;
+    font-family: 'robotomedium';
+    font-size: 1.1em;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.demotext-alignment {
+    position: absolute;
+    top: 41%;
+    left: 0;
+    right: 0;
+}
+
+.demotext-font {
+    font-size: 3.5em;
+    font-family: 'robotolight';
+    color: #fff;
+
+}
+
+.button-paddingtop {
+    padding-top: 60px;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+    /*.navbar-nav {*/
+        /*margin: 6.5px -15px;*/
+    /*}*/
+    .navbar-nav>li {
+        padding: 8px;
+    }
+    .navbar-custom .nav li a {
+        font-size: 14px;
+    }
+    .arrows i {
+        font-size: 5em;
+    }
+    .icon-style {
+        height: 80px;
+        width: 80px;
+    }
+    .demotext-font {
+        font-size: 3em;
+    }
+    .btn-concept {
+        width: 220px;
+        height: 46px;
+        font-size: 1em;
+    }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+    .navbar-nav>li {
+        padding: 8px;
+    }
+    .navbar-custom .nav li a {
+        font-size: 1em;
+    }
+    .demotext-font {
+        font-size: 2.5em;
+    }
+    .btn-concept {
+        width: 220px;
+        height: 46px;
+        font-size: 1em;
+    }
+    .arrows i {
+        font-size: 5em;
+    }
+    .icon-style {
+        height: 80px;
+        width: 80px;
+    }
+}
+@media (min-width: 320px)and (max-width: 480px) {
+    .demotext-font {
+        font-size: 1.2em;
+    }
+    .arrows i {
+        font-size: 4em;
+    }
+    .icon-style {
+        height: 60px;
+        width: 60px;
+        line-height: 0.9;
+    }
+    .btn-concept {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+.custom-nav ul {
+    font-size: 12px;
+    font-family: 'robotomedium';
+    font-weight: 700;
+}
+
+#signin_nav, #profile_nav{
+    border: 1px solid #272930;
+}
+@media (max-width: 640px) {
+    .logo-dimensions {
+        width: 140px;
+        height: 40px;
+    }
+}

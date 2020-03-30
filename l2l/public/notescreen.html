@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link href="js/assets/jquery.signaturepad.css" rel="stylesheet">
+    <link href="css/jquery.multiselect.css" rel="stylesheet"/>
+    <link href="css/froala_editor.pkgd.css" rel="stylesheet"/>
+    <link href="css/froala_style.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/notescreen.css" rel="stylesheet"/>
+    <link href="css/screenshot.css" rel="stylesheet"/>
+  <!--<link href="css/materialize.css" rel="stylesheet"/>-->
+
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container-fluid notescreen window-height">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="left-panel">
+                <div class="left-panel-view">
+                    <div class="row note-header">
+                        <div class="col-md-6 col-sm-6 col-xs-12 pull-left note-headingfont">Notes</div>
+                        <div class="col-md-6 col-sm-6 col-xs-12" id="subject_list"></div>
+                    </div>
+
+                    <div id="chapters_name"></div>
+                </div>
+                <!--<div class="row center-align empty-div"></div>-->
+
+                <div class="row center-align chaptername-bg">
+                    <div class="col-md-2 col-sm-2 col-xs-12"><i class="fa fa-2x fa-book" aria-hidden="true"></i></div>
+                    <div class="col-md-10 col-sm-10 col-xs-12 chapter-font">General notes</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12 concept-note" id="no_content">
+            <div class="row text-center">
+                <p class="text-font">Organise your concepts in your own digital notes.</p>
+                <div class="text-font alignment">
+                    Your notes are saved automatically and can be viewed from any devices,online or
+                    offline.
+                </div>
+                <div class="row text-center image-align">
+                    <img width="40%"
+                         src="images/icn_NewTeaching.svg" alt=""/>
+                </div>
+                <p class="text-font">It's look like you haven't added any notes to any concepts
+                    yet.</p>
+                <p class="text-font">Start writing your notes now!</p>
+            </div>
+        </div>
+
+        <div id="chapters_content">
+            <div class="col-md-6 col-sm-6 col-xs-12 content-left">
+                <div id="sections_content"></div>
+            </div>
+            <div class="col-md-8 col-sm-6 col-xs-12 content-left pull-right" id="note_editor">
+                <section id="editor" class="notescreen-editor">
+                    <div id='edit'>
+                        <div id='editInner'></div>
+                    </div>
+                    <div id="scribbleModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-align">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <span class="close" data-dismiss="modal">&times;</span>
+                            <div class="text-center">
+                                <canvas id="canvasId"></canvas>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for share -->
+<div class="modal fade" id="shareModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Share</h4>
+            </div>
+            <div class="modal-body">
+                <form class="main-form">
+                <div class="input-field">
+                    <input id="shareemail" name="shareemail" type="text" class="validate">
+                    <label for="shareemail">Email Id</label>
+                </div>
+                <div class="input-field">
+                    <input id="sharesubject" name="subject" type="text" class="validate">
+                    <label for="sharesubject">Subject</label>
+                </div>
+
+                    <div class="text-right"><button type="button">Send</button></div>
+                </form>
+            </div>
+            <!--<div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>-->
+        </div>
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript"
+        src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="js/components/froala_editor.pkgd.js"></script>
+<script src="js/components/jquery.multiselect.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/components/bootstrap-select.js"></script>
+<script src="js/components/signature_pad.js"></script>
+<script src="js/components/dom-to-image.js"></script>
+<script src="js/scripts/notes.js"></script>
+<script src="js/components/materialize.min.js"></script>
+</body>
+</html>

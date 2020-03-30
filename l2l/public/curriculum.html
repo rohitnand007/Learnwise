@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+          href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/curriculum.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+            rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/bootstrap-select.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+            src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <!--<script src="js/header.js"></script>-->
+    <script src="js/scripts/header_menu.js"></script>
+    <script src="js/scripts/curriculum.js"></script>
+    <!--<script src="js/index.js"></script>-->
+    <script src="js/scripts/social_redirect.js"></script>
+    <style type="text/css">
+        .slick-list {
+            padding-right: 100px !important;
+        }
+
+        .slick-track {
+            padding-top: 24px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container-fluid container-padding main-content">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top custom-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle home-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" id="logo_icon"><img
+                        class="img-responsive logo-dimensions"
+                        src="images/lernwise_logo.svg"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1"
+                 aria-expanded="true">
+                <ul class="nav navbar-nav navbar-right navlist-center ">
+                    <li>
+                        <a class="" href="curriculum.html">CURRICULUM</a>
+                    </li>
+                    <li>
+                        <a class="" href="subscription.html">SUBSCRIPTION</a>
+                    </li>
+                    <li class="profile-width">
+                        <a id="signin_nav" class="signin-customstyle"
+                           href="sign_in.html">SIGN IN</a>
+                        <a id="profile_nav" style="display: none" class="signin-customstyle"></a>
+                    </li>
+                    <li class="signout-width">
+                        <a id="signup_nav" class="signup-customstyle"
+                           href="sign_up.html">SIGN UP FREE</a>
+                        <a id="signout_nav" style="display: none;" class="signup-customstyle"
+                           onclick="signout()">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</div>
+<div class="background1 curriculum">
+    <div class="container container-top window-height">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <span class="main-heading">Start exploring the new way of learning</span>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 top-margin">
+            <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12 col-md-offset-3">
+                <div class="row" id="selector_list"></div>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 error-padding text-center" id="errorText"></div>
+        <div class=" col-md-12 col-sm-12 col-xs-12 text-center button-margin"><a>
+            <button type="button" class="btn-show" id="explore_content">EXPLORE</button>
+        </a>
+            <div style="margin-top: 10px; display: none" id="cart-div">
+            <button type="button" class="btn-show" id="cart-button">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="background2">
+    <div class="container container-margin" id="curriculum_content">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4 col-sm-12 col-xs-12 col-md-offset-4"><img
+                    class="img-responsive img-center" src="images/img_bg_curriculum.svg" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section style="background: #fff;height: 400px;">
+    <!--<div class="container text-center bottom-margin">
+      <div class="registrationdiv-alignment">
+        <div class="innerdiv-alignment">
+          <span class="registrationtext-font">Register and start learning by adding</span>
+          <div class="row registerinputs-align">
+            <div class="col-md-3"><input class="inputfield-style"
+                                         name="name"
+                                         type="text"
+                                         placeholder="Your Name "
+                                         class="validate"
+                                         id="user_name"></div>
+            <div class="col-md-3"><input class="inputfield-style"
+                                         name="email"
+                                         type="text"
+                                         placeholder="Email Address"
+                                         class="validate"
+                                         id="user_email"></div>
+            <div class="col-md-3"><input class="inputfield-style"
+                                         name="password"
+                                         type="password"
+                                         placeholder="Create Password"
+                                         class="validate"
+                                         id="user_pwd"></div>
+            <div class="col-md-3"><a>
+              <button type="button" class="btn-started" id="register">GET STARTED</button>
+            </a></div>
+          </div>
+          <div id="errorBox"></div>
+        </div>
+      </div>
+    </div>-->
+    <hr class="horizontalline-color">
+    <div class="container container-margin">
+        <div class="row row-position">
+            <div class="col-md-7 col-sm-8 col-xs-12">
+                <div class="col-md-3 col-sm-3 col-xs-3"><img src="images/icn_Logo symbol.svg"
+                                                             width="40px" alt=""/>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5"><h4 class="text-font">LEARN MORE</h4>
+                    <h5 class="subtext-font subtext-padding">Pricing and plans</h5>
+                    <h5 class="subtext-font subtext-childpadding">Contact</h5>
+                    <h5 class="subtext-font subtext-childpadding">Privacy&terms </h5>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 padding-zero">
+                    <h4 class="text-font">Support</h4>
+                    <h5 class="subtext-font subtext-padding">Demo</h5>
+                    <h5 class="subtext-font subtext-childpadding">Terms of service</h5>
+                    <h5 class="subtext-font subtext-childpadding">Security</h5>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-4 col-xs-12 socialicons-position"><span
+                    class="social-icons">
+            <a target="_self" class="fb socialicons-align"
+               onclick="social_login('facebook')">
+            <img class="img-responsive" src="images/icn_Facebook.svg"
+                 alt="facebook">
+            </a>
+            <a target="_self" class="google-plus socialicons-align"
+               onclick="social_login('googleplus')">
+            <img class="img-responsive" src="images/icn_Googleplus.svg"
+                 alt="googleplus">
+            </a>
+            <a class="socialicons-align"><img class="img-responsive" src="images/icn_Twitter.svg"
+                                              alt="twitter"></a>
+           </span></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

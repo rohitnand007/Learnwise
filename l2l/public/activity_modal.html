@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+
+    <!--Styles-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/activity_modal.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/scripts/header_menu.js"></script>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialogWidth">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                <!--<h4 class="modal-title">Modal Header</h4>-->
+                <!--</div>-->
+                <div class="modal-body">
+                    <section class="section1-padding">
+                        <h3 class="text-center heading-font">It's time for an activity!</h3>
+                        <p class="text-center activity-modal-subtext-font">Something new, something fun and something quick in
+                            an exciting way</p>
+                    </section>
+                    <section class="activity-modal-section-bg"><span><img class="img-responsive" src="images/icn_getStarted.svg" ></span></section>
+                    <section class="section3-padding">
+                        <div class="text-center">
+                            <a>
+                                <button type="button" class="btn-start">GET STARTED</button>
+                            </a>
+                        </div>
+                        <div class="text-center padding-top"><input class="cb" type="checkbox" id="check1"><label for="check1">Don't show this
+                            again
+                        </label></div>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<script>
+    $("#myModal").modal('show');
+</script>
+</body>
+</html>

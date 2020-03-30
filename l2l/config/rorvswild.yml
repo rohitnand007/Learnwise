@@ -1,0 +1,9 @@
+# Keep the development block for testing on your local machine only.
+development:
+  api_key: 'FzqG91HrzDbgq2ofDnZc'
+
+production:
+  api_key: <%= ENV['RORVSWILD_API_KEY']%>
+  # explain_sql_threshold: 500  # Execute EXPLAIN for queries above the specified time in ms.
+  ignored_exceptions:
+    - ActionController::RoutingError

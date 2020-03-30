@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/quiz.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/scripts/practice_quiz.js"></script>
+    <script src="js/controllers/user_control.js"></script>
+
+</head>
+<body>
+<div id="preloader"></div>
+<nav id="main_menu" class="navbar navbar-default concept-nav concept" role="navigation">
+    <div class="container                                                                                         ">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo_icon" class="navbar-brand logo-alignment">
+                <img class="img-responsive learningpath-logo-dimensions"
+                     src="images/icn_lernwise.svg"/>
+            </a>
+            <a class=" navbar-brand logo-alignment conceptlink-alignment"
+               href="./content/nucleus.html"><i class="fa fa-angle-left angleicon-font"
+                                                aria-hidden="true"></i><span
+                    class="conceptlink-spacing">Back to concepts</span></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="top-itemlist nav navbar-nav">
+                <li id="content_1"><a class="objective" href="learningpath1.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_2"><a class="conceptmap" href="concept-map/concept_map.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_3"><a class="video" href="learningpath_video.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_4"><a class="activity" href="keywords.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_5"><a class="assessment active" href="practice_quiz.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_6" class="learning-content-disable"><a class="assessment" href="#"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <span id="answer_text"></span>
+    <div class="questionmargin-top"><span class="questiontext-font" id="question"></span></div>
+    <div class="buttonsdiv-align">
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_1"></button>
+        </div>
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_2"></button>
+        </div>
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_3"></button>
+        </div>
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_4"></button>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn-next" id="next_question">Next</button>
+        <!--<span class="pull-right"><button type="button" class="btn-next" id="show_hint">Hint</button></span>-->
+    </div>
+    <div class="questionmargin-top" id="simplified_question" style="display: none">
+        <div><span class="questiontext-font" id="modified_questn">Sample question</span></div>
+        <div class="buttonsdiv-align">
+            <div class="button-topmargin">
+                <button type="button" class="btn-option" id="mq_1">A. Option 1</button>
+            </div>
+            <div class="button-topmargin">
+                <button type="button" class="btn-option" id="mq_2">B. Option 2</button>
+            </div>
+            <div class="button-topmargin">
+                <button type="button" class="btn-option" id="mq_3">C. Option 3</button>
+            </div>
+            <div class="button-topmargin">
+                <button type="button" class="btn-option" id="mq_4">D. Option 4</button>
+            </div>
+        </div>
+    </div>
+    <div class="questionmargin-top" id="correct_answer" style="display: none">
+        <div><span class="questiontext-font">Option 1 is right answer</span></div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="video_modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="quiz-video" id="quiz_video">
+            <video id="videoId" controls width="100%" height="100%"
+                   src="images/sintel-trailer.m4v"></video>
+        </div>
+        <div class="text-center">
+            <i class="fa fa-times-circle-o fa-2x cursor-pointer" id="close_modal"
+               aria-hidden="true"></i>
+            <div>Back to quiz</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

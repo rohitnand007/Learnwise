@@ -1,0 +1,61 @@
+-cache flash do
+  .container-fluid.full-height
+    .form-screen.full-height
+      .row.full-height.overflow-full-height
+        .col-md-12.col-xs-12.col-sm-12.full-height.no-gutter
+          .col-md-4.col-sm-5.col-xs-12.no-gutter.full-height.m-height
+            .aside-left.full-height
+              .col-md-12.col-sm-12.full-height
+                %a.logo{href:'#'}
+                  =image_tag("scentruc_logo.svg")
+          .col-md-8.col-sm-7.col-xs-12.no-gutter.full-height
+            .aside-right
+              .tcell
+                .row{style:"display: table-caption;width: 600%;margin-top: -15px"}
+                  -flash.each do |type, message|
+                    .alert_flash.col-md-6.col-sm-10.col-sm-offset-1.col-md-offset-6{style:"padding: 10px; background-color: #c7afaf;"}
+                      = message
+                -cache do
+                  .head-section.col-sm-offset-1.col-md-offset-3
+                    %h2.main-heading Sign in to scentric
+                    %h6.sub-heading Enter your details below
+
+                  =form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'main-form col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-3'})  do |f|
+                    .row
+                      .input-field
+                        =f.email_field :email, class:"validate"
+                        =f.label :email, 'Email Address'
+                    .row
+                      .input-field
+                        =f.password_field :password, class:"validate", minlength: 5, maxlength: 15
+                        =f.label :password, 'Password'
+                        %a.forgot-password{href: '/users/password/new'} Forgot Password?
+                    .row
+                      .login-sec
+                        .col-md-7.col-sm-5.col-xs-12.no-gutter
+                          %button.waves-effect.waves-light.btn.login-btn{type: 'submit'} Login
+
+                        .col-md-1.col-sm-2.col-xs-12.text-center.no-gutter
+                          %span.or-txt or
+
+                        .col-md-4.col-sm-5.col-xs-12.no-gutter
+                          %span.social-icons
+                            - if devise_mapping.omniauthable?
+                              - resource_class.omniauth_providers.each do |provider|
+                                = link_to image_tag( provider.to_s + '.svg', width:"45px", height:"45px", class:"pull-right paddingLeft"), omniauth_authorize_path(resource_name, provider)
+
+                  .clear
+
+                  .btm-section.col-sm-offset-1.col-md-offset-3
+                    .col-md-5.col-sm-12.no-gutter
+                      .terms-cond-sec
+                        %a{href: "#"} Terms of use.
+                        %a{href: "#"} Privacy policy
+
+                    .clear
+
+                    .col-md-5.col-sm-12.margin-top-30.no-gutter
+                      .dnt-have-acct
+                        %p
+                          Don't have an account?
+                          %a{href:"/users/sign_up"} Sign Up

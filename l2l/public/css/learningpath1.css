@@ -1,0 +1,211 @@
+.top-itemlist {
+    float: right;
+    margin: 0;
+}
+
+.concept-nav {
+    background-color: #fff;
+    border-color: #e7e7e7;
+    border-radius: 0;
+}
+
+.navbar {
+    min-height: 0;
+}
+.navbar-nav>li>a {
+   display: block;
+    padding: 15px 15px;
+}
+.navbar-nav>li {
+     padding: 0px;
+}
+.top-itemlist {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /*margin-right: 6%;*/
+}
+
+.logo-alignment {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /*margin-left: 40px !important;*/
+}
+
+.conceptlink-alignment {
+   padding-left: 15px;
+}
+
+.conceptlink-spacing {
+    padding-left: 8px;
+    font-size: 13px;
+    font-family: 'robotolight';
+    color: #666666;
+    font-weight: 700;
+}
+.angleicon-font {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.horizontalline-style {
+    border-top: 1px dotted lightgrey;
+    width: 20px;
+}
+
+.concept-text {
+    padding-top: 25px;
+    font-size: 1.25em;
+    font-family: robotoregular;
+    color: #272930;
+}
+
+.outcomes {
+    padding-top: 40px;
+}
+
+.outcomes h4 {
+    font-family: robotomedium;
+    color: #272930;
+}
+
+.outcomes .subcontent-paddingtop {
+    padding-top: 20px;
+}
+
+.outcomes p {
+    font-family: robotoregular;
+    font-size: 1.25em;
+    border: 1px solid #eef3f7;
+    background: #f7f9fb;
+    width: 80%;
+    padding: 10px 10px 10px 30px;
+    color: #272930;
+}
+
+.socialdiv-alignment {
+    width: 80%;
+    padding-top: 60px;
+}
+
+.socialicons-alignmnet {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    border-left: 2px solid gray;
+}
+
+.shareicon-style {
+    border: 1px solid gray;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.facebookicon-style {
+    border: 1px solid gray;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.images img {
+    width: 33%;
+    border-radius: 50%;
+}
+
+.icons i {
+    font-size: 1.4em;
+    line-height: 2.2;
+}
+
+.btn-start {
+    width: 230px;
+    height: 50px;
+    display: inline-block;
+    color: #fff;
+    background-color: #272930;
+    font-family: 'robotomedium';
+    font-size: 1.1em;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.icon-style {
+    border: 1px solid #a9b0b5;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #a9b0b5;
+    padding: 4px;
+}
+
+.icon-design {
+    border: 1px solid #a9b0b5;
+    border-radius: 50%;
+    padding: 2px !important;
+}
+
+.button-paddingtop {
+    padding-top: 20px;
+}
+.objective {
+    background: url('../images/icn_objective.svg') no-repeat;
+    position: relative;
+}
+.conceptmap {
+    background: url('../images/icn_conceptMap.svg');
+    position: relative;
+}
+.video {
+    background: url('../images/icn_video.svg');
+    position: relative;
+}
+.activity {
+    background: url('../images/icn_activity.svg');
+    position: relative;
+}
+.assessment {
+    background: url('../images/icn_assessment.svg');
+    position: relative;
+}
+.practicequiz {
+    background: url('../images/icn_assessment.svg');
+    position: relative;
+}
+.navbar .navbar-nav li a.objective.active,.navbar .navbar-nav li a.objective:hover,.navbar .navbar-nav li a.objective:focus {
+    background: url('../images/icn_objective_active.svg');
+    position: relative;
+}
+.navbar .navbar-nav li a.activity.active,.navbar .navbar-nav li a.activity:hover,.navbar .navbar-nav li a.activity:focus {
+    background: url('../images/icn_activity_active.svg');
+    position: relative;
+}
+.navbar .navbar-nav li a.conceptmap.active,.navbar .navbar-nav li a.conceptmap:hover,.navbar .navbar-nav li a.conceptmap:focus {
+    background: url('../images/icn_conceptMap_active.svg');
+    position: relative;
+
+}
+.navbar .navbar-nav li a.video.active,.navbar .navbar-nav li a.video:hover,.navbar .navbar-nav li a.video:focus {
+    background: url('../images/icn_video_active.svg');
+    position: relative;
+}
+.navbar .navbar-nav li a.assessment.active,.navbar .navbar-nav li a.assessment:hover,.navbar .navbar-nav li a.assessment:focus {
+    background: url('../images/icn_assessment_active.svg');
+    position: relative;
+}
+.lock-style {
+    position: absolute;
+    top: -8px;
+    left: 18px;
+}
+@media (max-width: 640px) {
+    .smallscreen-padding {
+        padding-top: 36px;
+    }
+}

@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %title L2L
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
+
+  %body
+    = yield
+
+    :javascript
+        window.onload = function() {
+        document.getElementById("user_email").focus();
+        document.getElementById("user_username").focus();
+        };
+        $(document).ready(function() {
+          $('select').material_select();
+        });
+        // for HTML5 "required" attribute
+        $("select[required]").css({
+          display: "inline",
+          height: 0,
+          padding: 0,
+          width: 0,
+          top: "67px",
+          position: "absolute",
+          left: "50%"
+        });

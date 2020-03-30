@@ -1,0 +1,76 @@
+svg {
+    position: relative;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fullscreen-image {
+    background: url('../images/Thank you.svg')no-repeat;
+    position: absolute;
+    top: 133px;
+    width: 100%;
+    height: 32vh;
+    background-position: center;
+}
+.btn2 {
+    width: 194px;
+    height: 50px;
+    display: inline-block;
+    color: white;
+    background-color: #ed4079;
+    border-radius: 25px;
+    font-family: 'robotolight';
+    font-size: 1.3em;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.heading-align {
+    position: absolute;
+    top:35vh;
+    bottom: 0;
+    width: 100%;
+}
+.heading-font {
+    font-size: 2.8em;
+    font-family: 'robotolight';
+    letter-spacing: 4px;
+    color:#2d2d54
+}
+.button-align {
+    position: absolute;
+    bottom: 24vh;
+    left: 0;
+    right:0;
+    text-align: center;
+}
+.icon-style {
+    font-size: 24px;
+    vertical-align: text-top;
+}
+.signup-customstyle:hover {
+    background-color: #ed4079 !important;
+
+}
+.signin-customstyle {
+    border: 1px solid #272930;
+}
+.background {
+    background: url('../images/triangle_background.svg');
+    position: relative;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.custom-nav ul {
+    font-size: 12px;
+    font-family: 'robotomedium';
+    font-weight: 700;
+}
+
+.custom-nav ul li a {
+    color: #272930;
+
+}

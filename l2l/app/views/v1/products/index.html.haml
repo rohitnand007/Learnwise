@@ -1,0 +1,5 @@
+%h1 Products
+.row
+  = render @products
+.row
+  =link_to 'View Cart', cart_items_path, class: 'btn btn-success pull-right', role: 'button'

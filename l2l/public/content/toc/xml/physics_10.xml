@@ -1,0 +1,409 @@
+<toc version="1" lang="en" icon="/icon/bio.png" display_name="Physics" learning_engine="disabled" >
+
+    <!--CHAPTER - 1 -->
+    <ge display_name="LIGHT- REFLECTION AND REFRACTION" id="c_f450f26508e944bbbd831c7802815f84" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="How is light reflected and images formed?" id="s_0bfd66f97a7d4a83905d2c441f640b9e" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Reflection of light" id="P121461" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reflection of light" id="P121461" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Law of reflection of light" id="P121295" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Law of reflection of light" id="P121295" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Real images" id="P121705" demo_content="false" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Real images" id="P121705" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Virtual images" id="P121706" demo_content="false" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Virtual images" id="P121706" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reflection off a concave mirror" id="P121646" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reflection off a concave mirror" id="P121646" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reflection in a Convex Mirror" id="P121648" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reflection in a Convex Mirror" id="P121648" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How is light refracted and images formed?" id="s_7d19097693f544d39c216b9f0588a94f" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Refraction of light" id="P121463" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Refraction of light" id="P121463" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Refractive Index" id="P121301" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Refractive Index" id="P121301" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Formation of images in convex lens" id="P121166" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Formation of images in convex lens" id="P121166" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Formation of images in concave lens" id="P121165" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Formation of images in concave lens" id="P121165" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Magnification of a Lens" id="P121212" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Magnification of a Lens" id="P121212" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 2 -->
+    <ge display_name="THE HUMAN EYE AND THE COLOURFUL WORLD" id="c_93a1db1ebf7641c29cf5e0f5c79e8387" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="How do we see light?" id="s_86339d01726e4b569fa5d9c164747d69" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Eye" id="Z121212" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Eye" id="Z121212" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Accommodation of the eye" id="P121013" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Accommodation of the eye" id="P121013" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Light refraction in the atmosphere" id="s_88dd2a4b94c544a4add606e8d04163f0" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Refraction of light through a prism" id="P121298" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Refraction of light through a prism" id="P121298" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Nature of light" id="P121455" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Nature of light" id="P121455" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Atmospheric Refraction" id="p121726" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Atmospheric Refraction" id="p121726" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Tyndall effect" id="C121436" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Tyndall effect" id="C121436" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Rayleigh scattering of light" id="P121317" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Rayleigh scattering of light" id="P121317" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 3 -->
+    <ge display_name="ELECTRICITY" id="c_9388db5018104d0a9deceef5933a51bc" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="Electric current" id="s_e83956e755e3432c814a4e8f4e549341" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Energy transformation in a simple circuit" id="P121454" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Energy transformation in a simple circuit" id="P121454" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Electric potential difference" id="P121116" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Electric potential difference" id="P121116" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Ohm’s Law" id="P121253" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Ohm’s Law" id="P121253" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Circuits of electric current" id="s_e91bc47a2d45434e8a78b0be842b3b17" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Circuit diagram" id="P121067" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Circuit diagram" id="P121067" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Cells in series circuit" id="P121059" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Cells in series circuit" id="P121059" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Cells in parallel circuit" id="P121394" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Cells in parallel circuit" id="P121394" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Effects of electric current" id="s_178844c9073c460dbbee44153f9d5faa" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Effects of electric current" id="P121711" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Effects of electric current" id="P121711" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 4 -->
+    <ge display_name="MAGNETIC EFFECTS OF ELECTRIC CURRENT" id="c_f3255548a1844bc6826a76a719b0c347" demo_content="true" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="Magnetic field and electricity" id="s_90efb7c491024cbe95e303bc4663e8d0" demo_content="true" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Magnetic field lines" id="P121351" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Magnetic field lines" id="P121351" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Magnetic field due to current in a long wire" id="P121205" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Magnetic field due to current in a long wire" id="P121205" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Magnetic field due to current through a circular loop of wire" id="P121642" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Magnetic field due to current through a circular loop of wire" id="P121642" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Magnetic field of a solenoid" id="P121208" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Magnetic field of a solenoid" id="P121208" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Fleming’s left hand rule" id="P121010" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Fleming’s left hand rule" id="P121010" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Electric motor" id="P121456" demo_content="true" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Electric motor" id="P121456" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Electromagnetic induction" id="P121121" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Electromagnetic induction" id="P121121" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Fleming’s right hand rule" id="P121141" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Fleming’s right hand rule" id="P121141" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 5 -->
+    <ge display_name="SOURCES OF ENERGY" id="c_d7d244a99df848af99ed819e25f7da4d" demo_content="true" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="Renewable energy sources" id="s_e1893a2099184e308b049ce53b41cce2" demo_content="true" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Biogas" id="C121226" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Biogas" id="C121226" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Windmill" id="P121389" demo_content="true" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Windmill" id="P121389" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Solar Cells" id="C121370" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Solar Cells" id="C121370" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Renewable energy" id="E121054" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Renewable energy" id="E121054" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Nuclear fission" id="P121250" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Nuclear fission" id="P121250" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Nuclear fusion" id="P121398" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Nuclear fusion" id="P121398" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="CNG" id="C121003" unlocked="false" demo_content="false" notes="false" learning_status="0" icon="">
+
+                <ce icon="icon/video.png" display_name="CNG" id="C121003" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+</toc>

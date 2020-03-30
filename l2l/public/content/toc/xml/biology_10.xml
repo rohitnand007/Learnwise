@@ -1,0 +1,580 @@
+<toc version="1" lang="en" icon="/icon/bio.png" display_name="Biology" learning_engine="disabled" >
+
+    <!--CHAPTER - 1 -->
+    <ge display_name="LIFE PROCESSES" id="c_b3b2c165bad949a1a55d30a1d9f8d10f" demo_content="true" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="How do organsism take food?" id="s_0c76bf2a7d0d4b41a082f884ceb9cdb6" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Modes of nutrition" id="Z121150" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Modes of nutrition" id="Z121150" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Photosynthesis" id="B121133" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Photosynthesis" id="B121133" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="CO2 is necessary for photosynthesis" id="B121036" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="CO2 is necessary for photosynthesis" id="B121036" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do we digest food?" id="s_5df8c69a311d484983436a9523715af4" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Digestive system I" id="Z121089" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Digestive system I" id="Z121089" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Digestive system II" id="Z121090" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Digestive system II" id="Z121090" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do we respire and produce energy?" id="s_37b4c47a32cc4b9f86a42bcb17b2985d" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Respiration in humans" id="Z121318" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Respiration in humans" id="Z121318" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Mechanism of breathing" id="Z121147" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Mechanism of breathing" id="Z121147" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Transportation of the respiratory gases" id="Z121219" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Transportation of the respiratory gases" id="Z121219" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="ATP and Chemical Energy" id="Z121060" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="ATP and Chemical Energy" id="Z121060" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do we circulate blood and lymph?" id="s_3590fec9d8e14626aad00a97d87acd6e" demo_content="true" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Human circulatory system" id="Z121416" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Human circulatory system" id="Z121416" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Composition and functions of blood" id="Z121086" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Composition and functions of blood" id="Z121086" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Human heart" id="Z121125" demo_content="true" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Human heart" id="Z121125" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Lymphatic system" id="Z121143" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Lymphatic system" id="Z121143" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do plants circulate food and water?" id="s_d2f78bb986f64311a450810b46c77590" demo_content="true" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Vascular Bundles" id="B121152" demo_content="true" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Vascular Bundles" id="B121152" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do we excrete fluid wastes?" id="s_1e2e7812093d46ecb5d401839f978554" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Excretory system of humans" id="Z121094" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Excretory system of humans" id="Z121094" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Structure of nephron" id="Z121159" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Structure of nephron" id="Z121159" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do plants eliminate water?" id="s_d6a43261c0604b40be14d2f0f1fc7f39" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Transpiration" id="B121157" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Transpiration" id="B121157" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 2 -->
+    <ge display_name="CONTROL AND COORDINATION" id="c_6403f99a920f4d0d8c8b187fa89a0c36" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="How do we coordinate through  nerves?" id="s_2e247f8fe6d64ddba7edf00f2d96657d" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Structure of neuron" id="Z121398" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Structure of neuron" id="Z121398" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Nervous system" id="Z121325" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Nervous system" id="Z121325" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Transmission of nerve impulse" demo_content="false" notes="false" learning_status="0" id="Z121160" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Transmission of nerve impulse" id="Z121160" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reflex action" id="Z121182" demo_content="false" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reflex action" id="Z121182" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do plants respond?" id="s_1d035c33014640ec9bfb914979882869" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Plant responses – tropisms" id="B121124" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Plant responses – tropisms" id="B121124" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Plant Responses – Nastic Movements" id="b121520" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Plant Responses – Nastic Movements" id="b121520" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do we coordinate through chemicals?" id="s_999722d6520444f7b44cc6de1721a4ca" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Hormones I" id="Z121438" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Hormones I" id="Z121438" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Hormones II" id="Z121051" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Hormones II" id="Z121051" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Hormones III" id="Z121050" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Hormones III" id="Z121050" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 3 -->
+    <ge display_name="HOW DO ORGANISMS REPRODUCE ?" id="c_f371272ec58d429487179e59068c3e33" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="How do organisms reproduce?" id="s_06051ad7824545228fc66c0f160a5e2e" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Asexual reproduction" id="B121325" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Asexual reproduction" id="B121325" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Reproduction in fungi" id="B121122" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Reproduction in fungi" id="B121122" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Asexual Reproduction in Sponges" id="Z121454" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Asexual Reproduction in Sponges" id="Z121454" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How do plants propagate without reproduction?" id="s_b2f38b7f793d494c81a5f543979e3cb6" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Natural Vegetative Propagation" id="b121507" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Natural Vegetative Propagation" id="b121507" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Artificial Vegetative Propagation – Stem Cuttings" id="b121508" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Artificial Vegetative Propagation – Stem Cuttings" id="b121508" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Artificial Vegetative Propagation – Grafting" id="b121540" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Artificial Vegetative Propagation – Grafting" id="b121540" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Artificial Vegetative Propagation – Layering" id="b121541" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Artificial Vegetative Propagation – Layering" id="b121541" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+        </ge>
+
+        <ge display_name="How do plants reproduce?" id="s_efa03b3377b84c2faf29852cdc43d3c5" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Life Cycle of Cellular Slime Molds" id="B121310" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Life Cycle of Cellular Slime Molds" id="B121310" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Sexual reproduction" id="B121324" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Sexual reproduction" id="B121324" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="The Reproductive Structures of Flowers" id="b121320" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="The Reproductive Structures of Flowers" id="b121320" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Types of Pollination" id="b121321" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Types of Pollination" id="b121321" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Development of Ovule" id="B121039" demo_content="false" learning_status="0" notes="false" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Development of Ovule" id="B121039" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Development of Pollen" id="B121040" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Development of Pollen" id="B121040" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Human reproductive systems" id="s_c2a627d123a440278afbfe70391eaf93" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Human male reproductive system" id="Z121145" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Human male reproductive system" notes="false" id="Z121145" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Human female reproductive system" id="Z121103" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Human female reproductive system" id="Z121103" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Menstrual Cycle" id="z121512" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Menstrual Cycle" id="z121512" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Human reproductive health" id="s_ed5da840a9874c7c947ef86743425333" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="AIDS" id="Z121044" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="AIDS" id="Z121044" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 4 -->
+    <ge display_name="HEREDITY AND EVOLUTION" id="c_89c5f8c059304213913aa486aa110490" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="Why organisms differ in characteristics?" id="s_55137e9420b443d599c1f1e46890116d" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Variations due to Crossing Over" id="B121292" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Variations due to Crossing Over" id="B121292" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How characteristics move through generations?" id="s_bb187a6d14b44017945a0a8fd4c42949" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Monohybrid cross" id="B121290" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Monohybrid cross" id="B121290" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Dihybrid Cross" id="B121291" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Dihybrid Cross" id="B121291" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How is sex of humans determined?" id="s_f2891fe9d922492d8c817344562fddbf" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Sex determination" id="Z121037" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Sex determination" id="Z121037" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How organisms evolved in nature?" id="s_d5e5088460a24ff7a17291def2b317d3" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Natural Selection" id="Z121340" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Natural Selection" id="Z121340" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="Proofs of evolution of organisms" id="s_fd282fd4b24b4cae93c09e5c9a6a10d6" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Evidences of evolution – Homologous organs" id="Z121335" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Evidences of evolution – Homologous organs" id="Z121335" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Evidences of evolution – fossils" id="Z121346" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Evidences of evolution – fossils" id="Z121346" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Evidences of evolution – Homologous organs" id="Z121335" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Evidences of evolution – Homologous organs" id="Z121335" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 5 -->
+    <ge display_name="OUR ENVIRONMENT" id="c_390f44cdb72c4c498de055b2afa03ac3" demo_content="false" learning_status="0" unlocked="false" icon="/icon/tfu.png" >
+
+        <ge display_name="Relationships in environment" id="s_5141c6e2866f4bd28d9d5780576b5bd2" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Food chain in ecosystems" id="Z121306" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Food chain in ecosystems" id="Z121306" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+
+            <ge display_name="Food web in ecosystems" id="Z121307" notes="false" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Food web in ecosystems" id="Z121307" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+
+        <ge display_name="How environment is affected?" id="s_2c27d7397ba746ba8cb8cfbda49b41c3" demo_content="false" learning_status="0" unlocked="false" icon="">
+
+            <ge display_name="Ozone layer" id="C121001" demo_content="false" notes="false" learning_status="0" unlocked="false" icon="">
+
+                <ce icon="icon/video.png" display_name="Ozone layer" id="C121001" CEW="10" RE="5" type="VIDEO" min_eff_time="300" max_eff_time="600">
+                    <flow_rule>
+                        usage = 500
+                    </flow_rule>
+                </ce>
+            </ge>
+        </ge>
+    </ge>
+
+    <!--CHAPTER - 6 -->
+    <!--<ge display_name="MANAGEMENT OF NATURAL RESOURCES" id="c_a085b9bbbcc04a03a0797f01f0acf900" unlocked="false" icon="/icon/tfu.png" >
+
+    </ge>-->
+</toc>

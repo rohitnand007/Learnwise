@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/concept_map.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+</head>
+<body>
+<nav id="main_menu" class="navbar navbar-default concept-nav concept" role="navigation">
+    <div class="container">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand logo-brandAlignment">
+                <img class="img-responsive"
+                     src="images/icn_lernwise.svg"/>
+            </a>
+            <a class="conceptlink-alignment" href="demotopic.html"><i class="fa fa-angle-left"
+                                                                      aria-hidden="true"></i><span
+                    class="conceptlink-spacing">Back to concepts</span></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="top-itemlist nav navbar-nav">
+                <li><a class="icon-design" href="learningpath1.html"><i
+                        class="fa fa-arrows icon-style" aria-hidden="true"></i></a></li>
+                <hr class="horizontalline-style">
+                <li><a class="icon-design" href="concept_map.html"><i
+                        class="fa fa-openid icon-style" aria-hidden="true"></i></a></li>
+                <hr class="horizontalline-style">
+                <li><a class="icon-design" href="learningpath_video.html"><i
+                        class="fa fa-play-circle icon-style" aria-hidden="true"></i></a></li>
+                <hr class="horizontalline-style">
+                <li><a class="icon-design" href="keywords.html"><i class="fa fa-openid icon-style"
+                                                                   aria-hidden="true"></i></a></li>
+                <hr class="horizontalline-style">
+                <li><a class="icon-design" href="#"><i class="fa fa-arrows icon-style"
+                                                       aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="window-height" id="concept_map">
+    <!--<img src="images/contentbg.png" width="100%" height="100%" alt="" />-->
+</div>
+<script>
+    $(function () {
+        $("#concept_map").load("concept-map/index.html");
+    });
+</script>
+</body>
+</html>

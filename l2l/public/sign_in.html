@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scentric</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet"
+          href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common_login.css"/>
+    <link type="text/css" rel="stylesheet" href="css/mediaqueries.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="js/components/materialize.min.js"></script>
+    <script type="text/javascript" src="js/scripts/sign_in.js"></script>
+    <script src="js/scripts/social_redirect.js"></script>
+
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container-fluid full-height">
+    <div class="form-screen full-height">
+        <div class="row full-height">
+            <div class="col-md-12 col-sm-12 col-xs-12 full-height no-gutter">
+                <div class="col-md-4 col-sm-5 col-xs-12 no-gutter full-height m-height">
+                    <div class="aside-left full-height">
+                        <div class="col-md-12 col-sm-12 full-height">
+                            <div class="divalign-center">
+                                <div class="alignment-center">
+                                    <a href="/" class="logo">
+                                        <img src="images/lernwise_logo.svg" width="200px"
+                                             alt="lernwise">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-7 col-xs-12 no-gutter full-height">
+                    <div class="aside-right">
+                        <div class="tcell">
+                            <div class="head-section col-sm-offset-1 col-md-offset-3">
+                                <h2 class="main-heading">Sign in to scentric</h2>
+                                <h6 class="sub-heading">Enter your details below</h6>
+                            </div>
+                            <form id="login_form"
+                                  class="main-form col-md-6 col-sm-10 col-xs-12 col-sm-offset-1 col-md-offset-3">
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input id="email" name="email" type="text" class="validate">
+                                        <label for="email">Email Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <input id="password" name="password" type="password"
+                                               class="validate">
+                                        <label for="password">Password</label>
+                                        <a href="forgot_password.html" class="forgot-password">Forgot
+                                            Password?</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="text-left">
+                                        <input class="cb" type="checkbox"
+                                               id="check1"><label for="check1">
+                                        Remember Me
+                                    </label>
+
+                                    </div>
+                                </div>
+                                <div id="errorBox"></div>
+                                <div class="row">
+                                    <div class="login-sec">
+                                        <div class="col-md-7 col-sm-5 col-xs-12 no-gutter">
+                                            <button class="waves-effect waves-light btn login-btn"
+                                                    type="button" name="login" id="login">Login
+                                            </button>
+                                        </div>
+                                        <div class="col-md-1 col-sm-2 col-xs-12 text-center no-gutter">
+                                            <span class="or-txt">or</span>
+                                        </div>
+                                        <div class="col-md-4 col-sm-5 col-xs-12 no-gutter">
+													<span class="social-icons">
+														<a target="_self" class="fb"
+                                                           onclick="social_login('facebook')">
+															<img src="images/icn_Facebook.svg"
+                                                                 alt="facebook">
+														</a>
+														<a target="_self" class="google-plus"
+                                                           onclick="social_login('googleplus')">
+															<img src="images/icn_Googleplus.svg"
+                                                                 alt="googleplus">
+														</a>
+													</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="clear"></div>
+                            <div class="btm-section col-sm-offset-1 col-md-offset-3">
+                                <div class="col-md-5 col-sm-12 no-gutter">
+                                    <div class="terms-cond-sec">
+                                        <a href="#">Terms of use.</a>
+                                        <a href="#">Privacy policy</a>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="col-md-5 col-sm-12 margin-top-30 no-gutter">
+                                    <div class="dnt-have-acct">
+                                        <p>Don't have an account? <a href="sign_up.html">Sign Up</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

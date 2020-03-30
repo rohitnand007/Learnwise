@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+    <link href="css/quiz.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://c.sproutvideo.com/player_api.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/scripts/quiz.js"></script>
+    <script src="js/controllers/user_control.js"></script>
+</head>
+<body>
+<div id="preloader"></div>
+<nav id="main_menu" class="navbar navbar-default concept-nav concept" role="navigation">
+    <div class="container                                                                                         ">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo_icon" class="navbar-brand logo-alignment">
+                <img class="img-responsive learningpath-logo-dimensions"
+                     src="images/icn_lernwise.svg"/>
+            </a>
+            <a class=" navbar-brand logo-alignment conceptlink-alignment"
+               href="./content/nucleus.html"><i class="fa fa-angle-left angleicon-font"
+                                                aria-hidden="true"></i><span
+                    class="conceptlink-spacing">Back to concepts</span></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="top-itemlist nav navbar-nav">
+                <li id="content_1"><a class="objective" href="learningpath1.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_2"><a class="conceptmap" href="concept-map/concept_map.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_3"><a class="video active" href="learningpath_video.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_4" class="learning-content-disable"><a class="activity" href="keywords.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_5" class="learning-content-disable"><a class="practicequiz" href="practice_quiz.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_6" class="learning-content-disable"><a class="assessment" href="#"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <span id="answer_text"></span>
+    <div class="questionmargin-top"><span class="questiontext-font" id="question"></span></div>
+    <div class="buttonsdiv-align">
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_1"></button>
+        </div>
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_2"></button>
+        </div>
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_3"></button>
+        </div>
+        <div class="button-topmargin">
+            <button type="button" class="btn-option" id="optn_4"></button>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn-next" id="next_question">Next</button>
+        <button type="button" class="btn-next" id="show_hint">Hint</button>
+    </div>
+</div>
+<!-- Modal -->
+<div id="video_modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+        <div class="player">
+            <div class="video-player">
+                <!--<iframe class='sproutvideo-player' type='text/html' src='http://videos.sproutvideo.com/embed/4c9adbb41815e3c8c4/afaec2088c347a8c?type=sd&noBigPlay=false&showcontrols=false' width='100%' height='100%' frameborder='0' allowfullscreen></iframe>-->
+                <div id="quiz_video" class="quiz-video learningpath-sprout-video"></div>
+
+                <div class="toolbar">
+                    <div class="progress" id="video-slider" style="margin: 10px 20px;"></div>
+                    <div class="control play-pause cursor-pointer"><a href="#"><img
+                            src="images/icn_play.svg" height="25px"></a></div>
+                    <div class="control video-timer"><h5 style="color: #ffffff;margin-top: 5px;">
+                        <span id="currentVideoTime"></span>/<span id="totalVideoTime"></span></h5>
+                    </div>
+                    <div class="control volume pull-left">
+                        <a id="volume-icon" class="cursor-pointer"><img src="images/icn_speaker.svg"
+                                                                        height="25px"></a>
+                        <!--<h4 style="color: #ffffff"></h4>-->
+                        <div class="progress cursor-pointer" id="volume-slider"></div>
+                    </div>
+                    <div class="control fullscreen cursor-pointer"><a><img
+                            src="images/icn_Enter%20fullscreen.svg" height="25px"></a></div>
+                    <div class="control settings cursor-pointer"><a><img
+                            src="images/icn_settings.svg" height="25px"></a></div>
+                    <div class="control pause-video cursor-pointer"><a><img
+                            src="images/icn_pauseVideo.svg" height="25px"></a></div>
+
+                </div>
+                <audio controls id="audio" src="./content/assets/b121002/b121002.mp3"
+                       style="display: none;"></audio>
+            </div>
+        </div>
+
+        <div class="btn-back-quiz">
+            <button type="button" class="btn-quiz btn-quiz-active " id="close_modal"><i
+                    class="fa fa-angle-left fa-1x btn-back-quiz-icon" aria-hidden="true"></i>BACK TO QUIZ</button>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

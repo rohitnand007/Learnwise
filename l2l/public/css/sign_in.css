@@ -1,0 +1,139 @@
+.globeImage {
+    position: relative;
+    background: url('../images/Signup_img.jpg');
+    background-size: cover;
+    background-position: 28% 0;
+}
+.scentricLogo {
+    position: absolute;
+    top:30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.containerAlign {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+.backgroundImage {
+    background: #f7f8f9 url('../images/bg_symbols.svg');
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-position: 55% 75%;
+    positon: relative;
+}
+.login form {
+    margin: 0 auto;
+}
+.login .main-heading {
+    font-family: 'robotolight';
+    font-size: 1.75em;
+    color: #272930;
+    font-weight: 300;
+}
+.login .sub-heading {
+    font-family: 'robotoregular' ;
+    font-size: 1.1em;
+    color: #58595e;
+    padding-top: 20px;
+}
+.login input[type="text"], input[type="password"],input[type="email"],input[type="nuber"],input[type="time"],input[type="date"],input[type="datetime"],input[type="search"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 1.125em;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.login input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+}
+.login input[type="text"],input[type="password"] {
+    padding-top: 1%;
+    padding-left:1%;
+    padding-right: 1%;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: solid 1px #b2b2b2;
+    transition: border 0.3s;
+    /*width: 460px;*/
+}
+.login input[type="text"]:focus,
+input[type="text"].focus,input[type="password"]:focus, input[type="password"].focus {
+    border-bottom: solid 1px #969696;
+}
+.login input {
+    font-family: 'robotolight';
+    font-size: 1.125em;
+    color: #8a8c93;
+    background: #f7f8f9;
+}
+.login label {
+    font-family: 'robotomedium';
+    font-size: 0.875em;
+    color: #58595e;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.login input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #8a8c93;
+}
+.login .custom-password {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b2b2b2;
+    width: 460px;
+    margin: auto;
+}
+.login .custom-password a {
+    font-family: 'robotolight';
+    font-size: 12px;
+    color: #8a8c93;
+    text-decoration: none;
+}
+.login .password-outline {
+    border: none;
+    outline: none;
+}
+.login .paddingLeft0 {
+    padding-left:0;
+}
+.login .paddingRight0 {
+    padding-right: 0;
+}
+.login .button-align {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+.login .or-txt{
+    font-family: 'robotoregular';
+    font-size: 1em;
+    color: #8a8c93;
+    margin-left: 2.5em;
+}
+.login .log-images img {
+    height: 40px;
+    width: 40px;
+}
+.login .termsOfSevice-text {
+    font-family: 'robotoregular';
+    font-size: 0.875em;
+    color:#8a8c93;
+}
+.login .accounts-text {
+    padding-top: 16px;
+    font-family: 'robotoregular';
+    font-size: 0.875em;
+    color: #58595e;
+}
+.login .link-color {
+    color:#ed4079;
+    padding-left:10px;"
+}

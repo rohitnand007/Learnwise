@@ -1,0 +1,10 @@
+%h1 Items in your cart
+.row
+  = render @cart_items
+.row
+  .col-sm-4
+    =link_to 'Back', products_path, class: 'btn btn-primary'
+  .col-sm-4
+    = link_to 'Clear Entire Cart', clear_cart_cart_items_path, method: :delete, class:'btn btn-danger pull-left'
+  .col-sm-4
+    = link_to 'Check Out', payment_orders_path, method: :get, class:'btn btn-success pull-right'

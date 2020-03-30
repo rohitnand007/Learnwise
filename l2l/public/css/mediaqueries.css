@@ -1,0 +1,113 @@
+/*ipad css*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	
+	.aside-right {
+		background: #f7f9fb;
+	}
+
+	.login-sec {
+		line-height: 50px;
+	}
+}
+
+/*mobile css*/
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+	
+	.aside-right {
+		background: #f7f9fb;
+		margin-top: 20px;
+		padding: 0 20px;
+		z-index: 9999;
+	}
+
+	.main-heading {
+		font-size: 22px;
+	}
+
+	.sub-heading {
+		margin: 10px 0 20px 0;
+		font-size: 14px;
+	}
+
+	.m-gutter-left {
+		padding-left: 0;
+		padding-right: 2px;
+	}
+
+	.login-sec {
+		line-height: 50px;
+	}
+
+	.m-height {
+		height: 18%;
+	}
+
+	.background-brainimage {
+		/*margin-top: 24px;*/
+	}
+
+	.login-btn {
+		width: 100%;
+	}
+	
+	.login-sec {
+		text-align: center;
+	}
+
+	.social-icons {
+		float: none;
+	}
+
+	.btm-section, .terms-cond-sec, .dnt-have-acct {
+		text-align: center;
+	}
+
+	.margin-top-30 {
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (min-width: 990px) and (max-width: 1079px) {
+
+	.login-sec .or-txt {
+		margin-left: -30px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
+	
+	.background-brainimage {
+		margin-top: 24px;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+	
+	.m-height {
+		height: 28%;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+	
+	.m-height {
+		height: 28%;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait) {
+	
+	.background-brainimage {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	.aside-right {
+		padding-top: 15px;
+	}
+}

@@ -1,0 +1,62 @@
+<% cache do %>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+    <link href="/assets/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/main.scss" rel="stylesheet" type="text/css">
+    <script src="/assets/jquery.js"></script>
+    <script src="/assets/bootstrap.js"></script>
+    <script src="/assets/header.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,400i,500,500i,700" rel="stylesheet">
+  </head>
+  <body>
+  <div style="background: url(<%= asset_path('backgroundImage1.png')%>);position: relative;height: 1176px;"></div>
+  <div class="container-fluid container-padding main-content">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            Menu <i class="fa fa-bars"></i>
+          </button>
+          <!--<a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/scentruc_logo_white.svg"/></a>-->
+          <a class="navbar-brand" href="index.html"><%= image_tag 'scentruc_logo_white.svg', class:"img-responsive"%></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true">
+          <ul class="nav navbar-nav navbar-right navlist-center">
+            <li>
+              <a href="index.html">CURRICULUM</a>
+            </li>
+            <li>
+              <a href="about.html">SUBSCRIPTION</a>
+            </li>
+            <li>
+            <% if current_user.present? %>
+              <a href="/users/sign_out">SIGN OUT</a>
+            <%else %>
+              <a href="/users/sign_in">SIGN IN</a>
+            <% end %>
+            </li>
+            <li>
+              <a href="/users/sign_up">SIGN UP FREE</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!--<div style="background: url('images/backgroundImage1.png');position: relative;height: 1176px;"></div>-->
+  </div>
+  </body>
+  </html>
+<% end %>

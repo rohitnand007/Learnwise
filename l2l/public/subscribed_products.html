@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+
+    <!--Styles-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/main.css" rel="stylesheet" type="text/css">-->
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/subscribed_products.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/scripts/subscribed_products.js"></script>
+    <script src="js/scripts/header_menu.js"></script>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container-fluid container-padding main-content">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top custom-nav nav-color">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html"><img
+                        class="img-responsive logo-dimensions"
+                        src="images/lernwise_logo.svg"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1"
+                 aria-expanded="true">
+                <ul class="nav navbar-nav navbar-right navlist-center ">
+                    <li>
+                        <a class="primary-color" href="curriculum.html">CURRICULUM</a>
+                    </li>
+                    <li>
+                        <a class="primary-color" href="subscription.html">SUBSCRIPTION</a>
+                    </li>
+                    <li class="profile-width">
+                        <a id="profile_nav" style="display: none"
+                           class="signin-customstyle primary-color"></a>
+                    </li>
+                    <li class="signout-width">
+                        <a id="signout_nav" style="display: none;" class="signup-customstyle"
+                           onclick="signout()">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</div>
+<div class="backgroundImage3">
+    <div class="window-height subscription_products">
+        <div class="container content-margin">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="main-heading">Start the new way of learning</h1>
+                    <p class="context">We all have been through those boring science llessons that
+                        never let you
+                        interact with what you are learning.</p>
+                    <div class="row form-select subscription-dropdown">
+                        <div class="col-md-4" id="field1"><label>Grade</label>
+                            <select>
+                                <option value="" selected>lX</option>
+                            </select>
+                        </div>
+                        <div class="col-md-8" id="field2">
+                            <label>Subject</label>
+                            <select>
+                                <option value="" selected>BIOLOGY</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button-margin">
+                        <button type="button" class="btn4" id="subscribe">SUBSCRIBE NOW TO GET
+                            STARTED
+                        </button>
+                    </div>
+                </div>
+                <div id="subscribed_subjects_div"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

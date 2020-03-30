@@ -1,0 +1,14 @@
+.col-sm-12{align:'center'}
+  %form.form-horizontal.well
+    .well
+      .form-group
+        %label.control-label.col-sm-2 Product_id:
+        .col-sm-10
+          %p.form-control-static
+            =cart_item.product_id
+      .form-group
+        %label.control-label.col-sm-2 Price:
+        .col-sm-10
+          %p.form-control-static
+            =cart_item.price
+    = link_to 'Delete This Item', cart_item_path(:id => cart_item.id) ,:method => :delete , class:'btn btn-alert'

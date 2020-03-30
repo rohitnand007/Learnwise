@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_editor.pkgd.min.css"
+      rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_style.min.css"
+        rel="stylesheet" type="text/css"/>
+  <link href="css/notescreen.css" rel="stylesheet" type="text/css">
+  <!--<link href="assets/jquery.signaturepad.css" rel="stylesheet">-->
+  <link href="css/screenshot.css" rel="stylesheet"/>
+</head>
+<style>
+  body {
+    text-align: center;
+  }
+
+  section {
+    margin: auto;
+    text-align: left;
+  }
+
+  textarea {
+    border: none;
+    resize: none;
+  }
+
+  .fr-desktop #close-1 {
+      float: right;
+  }
+
+  .fr-desktop #print-1 {
+    float: right;
+  }
+
+  .fr-desktop #fullscreen-1 {
+    float: right;
+  }
+
+  .fr-desktop #shareButton-1 {
+    float: right;
+  }
+
+  .custom-layer {
+    text-align: center;
+    padding: 10px;
+  }
+
+
+</style>
+<body>
+<section id="editor">
+  <div id='edit' style="margin-top: 30px;">
+    <div id='editInner'>
+
+      <p class="text" contenteditable="false">The fundamental unit of life - What are living
+        organisms</p>
+
+      <h2 class="topic-color" contenteditable="false">Charateristics of living organisms</h2>
+      <div id="userEditor">
+          <p>Just start typing.....</p>
+          <div class="sigPad" id="smoothed">
+
+              <div class="sig sigWrapper" style="height:auto;">
+                  <div class="typed"></div>
+                  <canvas class="pad" width="1200" height="300"></canvas>
+                  <input type="hidden" name="output" class="output">
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1//js/froala_editor.pkgd.min.js"></script>
+<script type="text/javascript" src="js/components/froala_editor.pkgd.js"></script>
+<script src="js/assets/numeric-1.2.6.min.js"></script>
+<script src="js/assets/bezier.js"></script>
+<script src="js/assets/jquery.signaturepad.js"></script>
+<script src="js/components/html2canvas.js"></script>
+<script src="js/components/dom-to-image.js"></script>
+
+
+<script>
+    $(function () {
+        $('#edit').froalaEditor({
+            toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'align-left',
+                'align-right', 'align-center', 'align-justify', 'formatOL', 'formatUL',
+                'insertImage', 'insertVideo', 'insertLink', 'close', 'fullscreen',
+                'textrightButton', 'print', 'shareButton', 'scribbleButton', 'screenshotButton'],
+
+            pluginsEnabled: ['share', 'image', 'print', 'lists', 'align', 'align-right', 'video', 'link',
+                'fullscreen', 'customPlugin'],
+
+            height: 300
+        })
+    });
+    $.FroalaEditor.DefineIcon('close', {NAME: 'remove'});
+    $.FroalaEditor.RegisterCommand('close', {
+        title: 'Close HTML',
+        focus: false,
+        undo: true,
+        refreshAfterCallback: true,
+        callback: function () {
+            $('#userEditor').empty();
+            var editorHtml = '<p>Just start typing.....</p><div class="sigPad" id="smoothed">' +
+                '<div class="sig sigWrapper" style="height:auto;"><div class="typed"></div>' +
+                '<canvas class="pad" width="1200" height="600"></canvas>' +
+                '<input type="hidden" name="output" class="output"></div></div>';
+            $('#userEditor').append(editorHtml);
+            this.events.focus();
+        }
+    });
+
+   /* -------------insert email field-------------*/
+
+    // Define popup template.
+    $.extend($.FroalaEditor.POPUP_TEMPLATES, {
+        "customPlugin.popup": '[_BUTTONS_][_CUSTOM_LAYER_]'
+    });
+
+    // Define popup buttons.
+    $.extend($.FroalaEditor.DEFAULTS, {
+        popupButtons: ['popupClose', '|', 'popupButton1', 'popupButton2'],
+    });
+
+    // The custom popup is defined inside a plugin (new or existing).
+    $.FroalaEditor.PLUGINS.customPlugin = function (editor) {
+        // Create custom popup.
+        function initPopup () {
+            // Popup buttons.
+
+
+            var popup_buttons = '';
+
+            // Create the list of buttons.
+            if (editor.opts.popupButtons.length > 1) {
+                popup_buttons += '<div class="fr-buttons">';
+                popup_buttons += editor.button.buildList(editor.opts.popupButtons);
+                popup_buttons += '</div>';
+            }
+
+            // Custom layer.
+            var custom_layer = '<div class="fr-my-layer fr-layer fr-active" id="fr-my-layer-' + editor.id + '"><div class="fr-input-line"><input id="fr-my-layer-text-' + editor.id + '" type="text" placeholder="' + editor.language.translate('Email Id') + '" tabIndex="1"></div><br/> <div class="fr-input-line"><input id="fr-my-layer-text-' + editor.id + '" type="text" placeholder="' + editor.language.translate('Subject') + '" tabIndex="1"></div>  <div class="fr-action-buttons"><button type="button" class="fr-command fr-submit" data-cmd="shareButton" tabIndex="2" role="button">' + editor.language.translate('Send') + '</button></div></div>';
+
+            // Load popup template.
+            var template = {
+                buttons: popup_buttons,
+                custom_layer: custom_layer
+            };
+            // Create popup.
+            var $popup = editor.popups.create('customPlugin.popup', template);
+
+            return $popup;
+        }
+
+
+        // Show the popup
+        function showPopup () {
+            // Get the popup object defined above.
+            var $popup = editor.popups.get('customPlugin.popup');
+
+            // If popup doesn't exist then create it.
+            // To improve performance it is best to create the popup when it is first needed
+            // and not when the editor is initialized.
+            if (!$popup) $popup = initPopup();
+
+            // Set the editor toolbar as the popup's container.
+            editor.popups.setContainer('customPlugin.popup', editor.$tb);
+
+            // This will trigger the refresh event assigned to the popup.
+            // editor.popups.refresh('customPlugin.popup');
+
+            // This custom popup is opened by pressing a button from the editor's toolbar.
+            // Get the button's object in order to place the popup relative to it.
+            var $btn = editor.$tb.find('.fr-command[data-cmd="shareButton"]');
+
+            // Set the popup's position.
+            var left = $btn.offset().left + $btn.outerWidth() / 2;
+            var top = $btn.offset().top + (editor.opts.toolbarBottom ? 10 : $btn.outerHeight() - 10);
+
+            // Show the custom popup.
+            // The button's outerHeight is required in case the popup needs to be displayed above it.
+            editor.popups.show('customPlugin.popup', left, top, $btn.outerHeight());
+        }
+
+        // Hide the custom popup.
+        function hidePopup () {
+            editor.popups.hide('customPlugin.popup');
+        }
+
+        // Methods visible outside the plugin.
+        return {
+            showPopup: showPopup,
+            hidePopup: hidePopup
+        }
+    }
+
+
+    // Define custom popup close button icon and command.
+    $.FroalaEditor.DefineIcon('popupClose', {NAME: 'times'});
+    $.FroalaEditor.RegisterCommand('popupClose', {
+        title: 'Close',
+        undo: false,
+        focus: false,
+        callback: function () {
+            this.customPlugin.hidePopup();
+        }
+    });
+
+    // Define custom popup 1.
+    $.FroalaEditor.DefineIcon('popupButton1', {NAME: 'envelope-o'}, editor);
+    $.FroalaEditor.RegisterCommand('popupButton1', {
+        title: 'Email',
+        undo: false,
+        focus: false,
+        callback: function () {
+
+            alert("popupButton1 was pressed");
+          /*  var active;*/
+           /* var custom_layer = '<div class="fr-my-layer fr-layer fr-active" id="fr-my-layer-' + editor.id + '"><div class="fr-input-line"><input id="fr-my-layer-text-' + editor.id + '" type="text" placeholder="' + editor.language.translate('Email Id') + '" tabIndex="1"></div><div class="fr-action-buttons"><button type="button" class="fr-command fr-submit" data-cmd="shareButton" tabIndex="2" role="button">' + editor.language.translate('Send') + '</button></div></div>';*/
+        }
+    });
+    // Define custom popup 2.
+    $.FroalaEditor.DefineIcon('popupButton2', {NAME: 'whatsapp'});
+    $.FroalaEditor.RegisterCommand('popupButton2', {
+        title: 'WhatsApp',
+        undo: false,
+        focus: false,
+        callback: function () {
+            alert("popupButton2");
+        }
+    });
+
+    $.FroalaEditor.DefineIcon('shareIcon',
+        {SRC: 'images/if_share4_216719.png', ALT: 'Share button', template: 'image'});
+    $.FroalaEditor.RegisterCommand('shareButton', {
+        title: 'Share',
+        icon: 'shareIcon',
+        undo: false,
+        focus: false,
+        plugin: 'customPlugin',
+        callback: function () {
+            this.customPlugin.showPopup();
+        }
+    });
+    $.FroalaEditor.DefineIcon('scribbleIcon',
+        {SRC: 'images/scribble.png', ALT: 'Scribble button', template: 'image'});
+    $.FroalaEditor.RegisterCommand('scribbleButton', {
+        title: 'Scribble',
+        icon: 'scribbleIcon',
+        focus: false,
+        undo: true,
+        refreshAfterCallback: true,
+        callback: function () {
+//            var canvas = document.getElementById('canvasId');
+//            var context = canvas.getContext('2d');
+//            var cw = canvas.clientWidth;
+//            var ch = canvas.clientHeight;
+//            canvas.width = 700;
+//            canvas.height = 420;
+//            $('#canvasId').sketch({defaultColor: "#ed4079", defaultSize: 1});
+            $(document).ready(function () {
+                $('#smoothed').signaturePad({
+                    drawOnly: true,
+                    drawBezierCurves: true,
+                    lineTop: 200,
+                    lineWidth: 0
+                });
+            });
+            this.events.focus();
+        }
+    });
+    $.FroalaEditor.DefineIcon('screenshotIcon',
+        {SRC: 'images/screenshot.png', ALT: 'Screenshot button', template: 'image'});
+    $.FroalaEditor.RegisterCommand('screenshotButton', {
+        title: 'Screenshot',
+        icon: 'screenshotIcon',
+        callback: function () {
+
+            var node = document.getElementById('userEditor');
+
+            domtoimage.toPng(node)
+            .then(function (dataUrl) {
+                console.log('Content...screenshot success');
+                var img = new Image();
+                img.src = dataUrl;
+                console.log(img);
+                node.appendChild(img);
+            })
+            .catch(function (error) {
+                console.error('oops, something went wrong! \n', error);
+            });
+        }
+    });
+</script>
+<script src="js/assets/json2.min.js"></script>
+</body>
+</html>
+

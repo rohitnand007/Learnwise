@@ -1,0 +1,118 @@
+/*.carousel-indicators .active {*/
+/*background: #ff0066;*/
+/*}*/
+.carousel-control:hover, .carousel-control:focus {
+    color: #31708f;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.carousel-indicators li {
+    border: 1px solid #ccc;
+}
+
+.center {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.center-align {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.adjust1 {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.adjust2 {
+    margin: 0;
+}
+
+.arrows-alignment {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-control {
+    width: auto;
+}
+
+a.objective.active, .navbar .navbar-nav li a.objective:hover, .navbar .navbar-nav li a.objective:focus {
+    background: url('../images/icn_objective_active.svg');
+    position: relative;
+}
+
+.carousel-indicators li.active {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    background-color: #ff0066;
+}
+
+.carousel-indicators li {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-font {
+    font-size: 6em;
+}
+
+.content-margin {
+    margin-bottom: 10%;
+}
+
+.heading-font {
+    padding-top: 16px;
+}
+
+.subheading-font {
+    padding-top: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+@media (min-width: 480px) and (max-width: 640px) {
+    .icon-font {
+        font-size: 4em;
+    }
+    .heading-font {
+        font-size: 16px;
+    }
+    .subheading-font {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 4px 12px;
+    }
+    .carousel-indicators {
+        bottom: 0px;
+    }
+}
+@media (max-width: 320px) {
+    .heading-font {
+        font-size: 20px;
+    }
+    .subheading-font {
+        padding-top: 16px;
+        font-size: 17px;
+    }
+    .icon-font {
+        font-size: 4em;
+    }
+    .carousel-indicators {
+        bottom: 0px;
+    }
+    .content-margin {
+        margin-bottom: 14%;
+    }
+
+}

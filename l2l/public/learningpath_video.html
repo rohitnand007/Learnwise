@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/home.css" rel="stylesheet" type="text/css">-->
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+    <link href="css/learningpath_video.css" rel="stylesheet" type="text/css">
+    <link href="css/modal.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css">
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/jquery.multiselect.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://c.sproutvideo.com/player_api.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/sketch.js"></script>
+    <script src="js/scripts/learningpath_video.js"></script>
+    <script src="js/controllers/user_control.js"></script>
+</head>
+<body>
+<div id="preloader"></div>
+<nav id="main_menu" class="navbar navbar-default concept-nav concept" role="navigation">
+    <div class="container">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo_icon" class="navbar-brand logo-alignment">
+                <img class="img-responsive learningpath-logo-dimensions"
+                     src="images/icn_lernwise.svg"/>
+            </a>
+            <a class="navbar-brand logo-alignment conceptlink-alignment"
+               href="./content/nucleus.html"><i class="fa fa-angle-left angleicon-font"
+                                                aria-hidden="true"></i><span
+                    class="conceptlink-spacing">Back to concepts</span></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="top-itemlist nav navbar-nav">
+                <li id="content_1"><a class="objective" href="learningpath1.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_2"><a class="conceptmap" href="concept-map/concept_map.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_3"><a class="video active" href="learningpath_video.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_4" class="learning-content-disable"><a class="activity" href="keywords.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_5" class="learning-content-disable"><a class="practicequiz" href="practice_quiz.html"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_6" class="learning-content-disable"><a class="assessment" href="#"><img class="lock-style" src="images/Locked.svg" width="20px" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <div class="player">
+        <div class="video-player">
+            <!--<iframe class='sproutvideo-player' type='text/html' src='http://videos.sproutvideo.com/embed/4c9adbb41815e3c8c4/afaec2088c347a8c?type=sd&noBigPlay=false&showcontrols=false' width='100%' height='100%' frameborder='0' allowfullscreen></iframe>-->
+            <div id="learningpath_sprout_video" class="learningpath-sprout-video"></div>
+
+            <div class="toolbar">
+                <div class="progress" id="video-slider" style="margin: 10px 20px;"></div>
+                <div class="control play-pause cursor-pointer"><a><img src="images/icn_play.svg"
+                                                                       height="25px"></a></div>
+                <div class="control video-timer"><h5 style="color: #ffffff;margin-top: 5px;"><span
+                        id="currentVideoTime"></span>/<span id="totalVideoTime"></span></h5></div>
+                <div class="control volume pull-left">
+                    <a id="volume-icon" class="cursor-pointer"><img src="images/icn_speaker.svg"
+                                                                    height="25px"></a>
+                    <!--<h4 style="color: #ffffff"></h4>-->
+                    <div class="progress cursor-pointer" id="volume-slider"></div>
+                </div>
+                <div class="control fullscreen cursor-pointer"><a><img
+                        src="images/icn_Enter%20fullscreen.svg" height="25px"></a></div>
+                <div class="control settings cursor-pointer"><a><img src="images/icn_settings.svg"
+                                                                     height="25px"></a></div>
+                <div class="control pause-video cursor-pointer"><a><img
+                        src="images/icn_pauseVideo.svg" height="25px"></a></div>
+
+            </div>
+            <audio controls id="audio" src="./content/assets/b121002/b121002.mp3"
+                   style="display: none;"></audio>
+        </div>
+    </div>
+    <!--<video id="videoId" controls width="100%" height="100%" src="images/sintel-trailer.m4v"></video>-->
+
+    <div class="row row-center margin-top-20">
+        <div class="col-md-6 col-sm-6 col-xs-12 row-center">
+            <p class="heading-font">
+                SCRIPT
+            </p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <a class="pull-left">
+                <button type="button" class="btn-quiz btn-quiz-active" id="takeScreenshot">Save
+                    Screenshot
+                </button>
+            </a>
+            <a class="pull-right">
+                <button type="button" class="btn-quiz" id="quizBtn">LEARNING QUIZ<i
+                        class="fa fa fa-long-arrow-right right-arrow-icon" aria-hidden="true"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="content-font" id="script_content"></div>
+
+
+    <div id="videoScreenshotModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <div class="text-center">
+                <p>Video screenshot:</p>
+
+                <div>
+                    <img src="" id="sampleScreenshot">
+                </div>
+
+                <canvas id="canvasId"></canvas>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    function saveVideoScreenshot() {
+        var video = document.getElementById("videoId");
+        var canvas = document.getElementById('canvasId');
+        var context = canvas.getContext('2d');
+        var cw = canvas.clientWidth;
+        var ch = canvas.clientHeight;
+        canvas.width = 700;
+        canvas.height = 420;
+
+        $("#myModal").modal('show');
+        video.pause();
+
+        context.drawImage(video, 0, 0, 720, 360);
+        $('#canvasId').sketch({defaultColor: "#ed4079", defaultSize: 1});
+
+        $("#myModal").on("hidden.bs.modal", function () {
+            if (video.paused) {
+                video.play();
+            }
+            var dataURL = canvas.toDataURL("image/png"); //gives base64 string to save the screenshot on close
+            $('#canvasId').sketch('actions', []);
+        });
+    }
+</script>
+</body>
+</html>

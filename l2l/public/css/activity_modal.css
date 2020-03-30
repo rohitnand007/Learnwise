@@ -1,0 +1,103 @@
+.modal-dialogWidth {
+    width: 370px;
+}
+
+.activity-modal-section-bg {
+    background-color: #1E88E5;
+    /*height: 200px;*/
+    padding: 36px;
+}
+
+#activity-start-modal .modal-content{
+    padding: 0;
+    border-radius: 10px;
+}
+.modal-body {
+    padding: 0;
+
+}
+
+.section1-padding {
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.section3-padding {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+.btn-quiz {
+    border: 1px solid #ed4079;
+    padding: 8px !important;
+    border-radius: 50px;
+    text-align: -webkit-center;
+    width: 150px;
+    color: #fff;
+    background-color: #ed4079;
+    cursor: pointer;
+}
+.heading-font {
+    font-size: 1.6em;
+    font-family: 'robotoregular';
+    margin-bottom: 20px;
+}
+.activity-modal-subtext-font {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: 'robotoregular';
+    margin-bottom: 16px;
+}
+.btn-start {
+    background: #ff0066;
+    color: #fff;
+    width: 150px;
+    height: 36px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1em;
+    font-family: 'robotomedium';
+}
+.cb {
+    display: none;
+}
+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 5px;
+}
+label:before {
+    line-height: 20px;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ff0066;
+}
+input[type=checkbox]:checked + label:before
+ {
+    content: "\2713";
+    color: #ff0066;
+    text-align: center;
+    line-height: 16px;
+}
+.modal-dialog {
+    margin:0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

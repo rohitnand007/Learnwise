@@ -1,0 +1,10 @@
+#users
+krishna:
+  id: 23
+  username: "Krishna Chaitanya"
+  email: "abcd@gmail.com"
+
+rohit:
+  username: 'Rohit'
+  email: 'rohit@gmail.com'
+

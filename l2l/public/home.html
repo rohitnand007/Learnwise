@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet"
+          href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://c.sproutvideo.com/player_api.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <style>
+        /*.player {
+            width: 640px;
+            height: 403px;
+            position: relative;
+            margin: 50px auto;
+        }*/
+
+        .video {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .control {
+            float: left;
+            padding: 0 10px;
+        }
+
+        .toolbar {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 13px 0 13px;
+        }
+
+        .control a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .progress-container {
+            position: absolute;
+            left: 43px;
+            right: 79px;
+            width: auto;
+        }
+
+        .volume, .fullscreen, .settings, .pause-video {
+            float: right;
+        }
+
+        .ui-slider-horizontal {
+            height: 0.3em;
+        }
+
+        .progress {
+            background: #222222;
+            border-radius: 4px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .progress#volume-slider {
+            /*margin-top: 10px;*/
+            margin-bottom: 0;
+            padding: 0 10px;
+            width: 100px;
+        }
+
+        .volume {
+            display: flex;
+            align-items: center;
+        }
+
+        .volume a#volume-icon {
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid container-padding main-content">
+    <div class="    ">
+        <div class="player">
+            <div class="video">
+                <iframe class='sproutvideo-player' type='text/html'
+                        src='http://videos.sproutvideo.com/embed/4c9adbb41815e3c8c4/afaec2088c347a8c?type=sd&noBigPlay=false&showcontrols=false'
+                        width='100%' height='100%' frameborder='0' allowfullscreen></iframe>
+
+                <div class="toolbar">
+                    <div class="progress" id="video-slider" style="margin: 10px 20px;"></div>
+                    <div class="control play-pause"><a href="#"><img src="images/icn_play.svg"
+                                                                     height="25px"></a></div>
+                    <div class="control video-timer"><h5 style="color: #ffffff;margin-top: 5px;">
+                        <span id="currentVideoTime"></span>/<span id="totalVideoTime"></span></h5>
+                    </div>
+                    <div class="control volume pull-left">
+                        <a id="volume-icon"><img src="images/icn_speaker.svg" height="25px"></a>
+                        <!--<h4 style="color: #ffffff"></h4>-->
+                        <div class="progress cursor-pointer" id="volume-slider"></div>
+                    </div>
+                    <div class="control fullscreen"><a href="#"><img
+                            src="images/icn_Enter%20fullscreen.svg" height="25px"></a></div>
+                    <div class="control settings"><a href="#"><img src="images/icn_settings.svg"
+                                                                   height="25px"></a></div>
+                    <div class="control pause-video"><a href="#"><img
+                            src="images/icn_pauseVideo.svg" height="25px"></a></div>
+
+                </div>
+                <audio controls id="audio" src="./content/assets/b121002/b121002.mp3"
+                       style="display: none;"></audio>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        /*$('.progress').slider({
+         value: 0,
+         orientation: "horizontal",
+         range: "min",
+         animate: true
+         });*/
+
+        var myAudio = document.getElementById('audio');
+
+        var _duration = 0, _playing = false, _volume = 1, _fullscreen = false, audioTime = 0, audioPlaying = false;
+
+        function displayCurrentTime(currentTime) {
+            var currentTimeMins = Math.floor(currentTime / 60);
+            var currentTimeSecs = Math.floor(currentTime % 60);
+            var totalVideoTimeMins = Math.floor(_duration / 60);
+            var totalVideoTimeSecs = Math.floor(_duration % 60);
+
+            if (totalVideoTimeMins < 10) {
+                totalVideoTimeMins = "0" + totalVideoTimeMins;
+            }
+
+            if (totalVideoTimeSecs < 10) {
+                totalVideoTimeSecs = "0" + totalVideoTimeSecs;
+            }
+
+            if (currentTimeMins < 10) {
+                currentTimeMins = "0" + currentTimeMins;
+            }
+
+            if (currentTimeSecs < 10) {
+                currentTimeSecs = "0" + currentTimeSecs;
+            }
+
+            if ((currentTimeMins === totalVideoTimeMins) && (currentTimeSecs
+                                                             >= totalVideoTimeSecs)) {
+                currentTimeSecs = totalVideoTimeSecs;
+            }
+
+            $("#currentVideoTime").html(currentTimeMins + ':' + currentTimeSecs);
+        }
+
+        var videoPlayer = new SV.Player({videoId: '4c9adbb41815e3c8c4'});
+
+        videoPlayer.bind('ready', function (event) {
+            _duration = event.data.duration;
+            console.log(videoPlayer.getCurrentTime() + " / " + _duration);
+            var totalVideoTimeMins = Math.floor(_duration / 60);
+            var totalVideoTimeSecs = Math.floor(_duration % 60);
+
+            if (totalVideoTimeMins < 10) {
+                totalVideoTimeMins = "0" + totalVideoTimeMins;
+            }
+
+            if (totalVideoTimeSecs < 10) {
+                totalVideoTimeSecs = "0" + totalVideoTimeSecs;
+            }
+            $("#totalVideoTime").html(totalVideoTimeMins + ':' + totalVideoTimeSecs);
+            $("#currentVideoTime").html('00:00');
+
+            $(".progress#video-slider").slider("option", "max", _duration);
+//            $(".volume h4").html(100);
+            $(".progress#volume-slider").slider("option", "max", 100).slider("option", "value", 100)
+                    .hide();
+
+        });
+
+        videoPlayer.bind('progress', function (event) {
+            //console.log(event.data.time);
+            audioTime = event.data.time;
+            displayCurrentTime(event.data.time);
+            $('.progress#video-slider').slider("option", "value", (event.data.time));
+        });
+
+        videoPlayer.bind('completed', function (event) {
+            $('.play-pause a').html('<img src="images/icn_replay.svg" height="25px">');
+        });
+
+        videoPlayer.bind('pause', function (event) {
+
+            var roundingTime = Math.floor(videoPlayer.getCurrentTime() * 1000) / 1000;
+            videoPlayer.seek(roundingTime);
+            _playing = false;
+            $('.play-pause a').html('<img src="images/icn_play.svg" height="25px">');
+
+        });
+
+        videoPlayer.bind('play', function (event) {
+            console.log("play");
+            if (audioPlaying) {
+                myAudio.pause();
+                audioPlaying = false;
+                videoPlayer.seek(myAudio.currentTime);
+            }
+
+            _playing = true;
+            $('.ui-slider-handle').hide();
+            $('.play-pause a').html('<img src="images/icn_pauseVideo.svg" height="25px">');
+        });
+
+        videoPlayer.bind('volume', function (event) {
+            _volume = event.data;
+            //console.log(_volume);
+
+            if (_volume > 0.75) {
+                $('#volume-icon').html('<img src="images/icn_speaker.svg" height="25px">');
+            } else if (_volume === 0) {
+                $('#volume-icon').html('<img src="images/icn_mute.svg" height="25px">')
+            } else if (_volume >= 0.3 && _volume <= 0.7) {
+                $('#volume-icon').html('<img src="images/icn_volume_medium.svg" height="25px">')
+            } else if (_volume < 0.3) {
+                $('#volume-icon').html('<img src="images/icn_volume_low.svg" height="25px">')
+            }
+        });
+
+        $('.play-pause a').click(function () {
+            if (!_playing) {
+                if (audioPlaying) {
+                    //console.log(myAudio.currentTime);
+                    myAudio.pause();
+                    audioPlaying = false;
+                    videoPlayer.seek(myAudio.currentTime);
+                    videoPlayer.play();
+                } else {
+                    videoPlayer.play();
+                }
+            } else {
+                videoPlayer.pause();
+            }
+        });
+
+        $('#volume-icon').click(function () {
+            if (_volume === 0) {
+                _volume = 1;
+            } else {
+                _volume = 0;
+            }
+            videoPlayer.setVolume(_volume);
+//            $(".volume h4").html(_volume*100);
+            $(".progress#volume-slider").slider("option", "value", _volume * 100);
+        });
+
+        $(".volume").on('mouseover', function () {
+//           console.log("Mouse over");
+            $(".progress#volume-slider").show();
+        }).on('mouseout', function () {
+//            console.log("Mouse Out");
+            $(".progress#volume-slider").hide();
+        });
+
+        $('.settings a').click(function () {
+            console.log(videoPlayer.getVolume());
+            console.log(videoPlayer.getCurrentTime());
+            console.log(videoPlayer.getPercentLoaded());
+            console.log(videoPlayer.getDuration());
+            //console.log(videoPlayer.getEmail());
+            //console.log(videoPlayer.toggleHD());
+        });
+
+        $('.pause-video a').click(function () {
+            if (!audioPlaying) {
+                videoPlayer.pause();
+                myAudio.currentTime = audioTime;
+                myAudio.play();
+                audioPlaying = true;
+            } else {
+                myAudio.pause();
+                audioPlaying = false;
+                videoPlayer.seek(myAudio.currentTime);
+                videoPlayer.play();
+            }
+        });
+
+        myAudio.ontimeupdate = function () {
+            console.log("ss", myAudio.currentTime);
+            $('.progress#video-slider').slider("option", "value", (myAudio.currentTime));
+            displayCurrentTime(myAudio.currentTime)
+        };
+
+        $('.fullscreen a').click(function () {
+            var elem = $('.video')[0];
+            if (!_fullscreen) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) {
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                }
+                _fullscreen = true;
+                $('.fullscreen a')
+                        .html('<img src="images/icn_exit%20fullscreen.svg" height="25px">');
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                }
+                _fullscreen = false;
+                $('.fullscreen a')
+                        .html('<img src="images/icn_Enter%20fullscreen.svg" height="25px">');
+            }
+        });
+
+        $('.progress#video-slider').slider({
+                                               value: 0,
+                                               orientation: "horizontal",
+                                               range: "min",
+                                               animate: true,
+                                               slide: function (event, ui) {
+                                                   console.log(JSON.stringify(ui));
+                                                   videoPlayer.seek(ui.value);
+                                               }
+                                           });
+
+        $('.progress#volume-slider').slider({
+                                                value: 0,
+                                                orientation: "horizontal",
+                                                range: "min",
+                                                animate: true,
+                                                slide: function (event, ui) {
+//                $(".volume h4").html(ui.value);
+                                                    console.log(ui.value);
+                                                    if (audioPlaying) {
+                                                        myAudio.volume = ui.value / 100;
+                                                    } else {
+                                                        videoPlayer.setVolume(ui.value / 100);
+                                                    }
+//                $(".progress#volume-slider").slider("option", "value", _volume*100);
+                                                }
+                                            });
+    });
+</script>
+</body>
+</html>

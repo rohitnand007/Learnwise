@@ -1,0 +1,29 @@
+.col-sm-4{align:'center'}
+  %form.form-horizontal.well
+    .well
+      .form-group
+        %label.control-label.col-sm-2 Name:
+        .col-sm-10
+          %p.form-control-static 
+            =product.name
+      .form-group
+        %label.control-label.col-sm-2 Default Price:
+        .col-sm-10
+          %p.form-control-static 
+            =product.default_price
+      .form-group
+        %label.control-label.col-sm-2 Grade:
+        .col-sm-10
+          %p.form-control-static
+            =product.grade
+      .form-group
+        %label.control-label.col-sm-2 Subject:
+        .col-sm-10
+          %p.form-control-static
+            =product.subject
+      -if product.is_accessible? current_user
+        =link_to 'Show', product, class: 'btn btn-info'
+      -elsif product.in_cart?(current_user) || product.in_cart_with_session?(@session_id)
+        =link_to 'Already added', '#', class: 'btn btn-primary disabled'
+      -else
+        = link_to 'Add to Cart', {controller:'cart_items', action:'create', product_id: product.id },:method => :post , class:'btn btn-primary'

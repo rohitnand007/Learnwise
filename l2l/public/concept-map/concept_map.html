@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <style></style>
+    <title>L2L</title>
+    <link href="./css/screenshot.css" rel="stylesheet"/>
+    <!--<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>-->
+    <link href="./static/css/main.21885a66.css" rel="stylesheet">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet" type="text/css">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/learningpath1.css" rel="stylesheet" type="text/css">
+    <link href="../css/modal.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/components/jquery.multiselect.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/html2canvas.js"></script>
+    <script src="./js/dom-to-image.js"></script>
+    <script src="../js/components/header.js"></script>
+    <script src="../js/controllers/user_control.js"></script>
+    <script src="js/concept-map.js"></script>
+
+    <style>
+        #contentScreenId img {
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+<div id="preloader"></div>
+<nav id="main_menu" class="navbar navbar-default concept-nav concept" role="navigation">
+    <div class="container">
+        <div class="row navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="logo_icon" class="navbar-brand logo-alignment">
+                <img class="img-responsive learningpath-logo-dimensions"
+                     src="../images/icn_lernwise.svg"/>
+            </a>
+            <a class="navbar-brand logo-alignment conceptlink-alignment"
+               href="../content/nucleus.html"><i class="fa fa-angle-left angleicon-font"
+                                                 aria-hidden="true"></i><span
+                    class="conceptlink-spacing">Back to concepts</span></a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="top-itemlist nav navbar-nav">
+                <li id="content_1"><a class="objective" href="../learningpath1.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_2"><a class="conceptmap active" href="../concept-map/concept_map.html"></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_3" class="learning-content-disable"><a class="video" href="../learningpath_video.html"><img class="lock-style" src="../images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_4" class="learning-content-disable"><a class="activity" href="../keywords.html"><img class="lock-style" src="../images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_5" class="learning-content-disable"><a class="practicequiz" href="../practice_quiz.html"><img class="lock-style" src="../images/Locked.svg" width="20px" alt="" /></a></li>
+                <hr class="horizontalline-style">
+                <li id="content_6" class="learning-content-disable"><a class="assessment" href="#"><img class="lock-style" src="../images/Locked.svg" width="20px" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div id="root"></div>
+    <div class="text-center hide_element" style="margin-top: 10px;margin-bottom: 10px">
+        <button type="button" class="btn btn-info" onclick="saveContentScreenshot()">Take
+            Screenshot
+        </button>
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <div class="text-center">
+                <p>Content screenshot:</p>
+                <div id="contentScreenId"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    function saveContentScreenshot() {
+        var o = document.getElementById("root");
+        domtoimage.toPng(o).then(function (o) {
+            console.log("Content...screenshot success");
+            var n = new Image;
+            n.src = o, console.log(n), $('#contentScreenId').empty().append(n), $("#myModal")
+                    .modal('show');
+        }).catch(function (o) {
+            console.error("oops, something went wrong! \n", o)
+        })
+    }
+
+    $(document).ready(function () {
+        $('#preloader').fadeOut(1000, function () {
+            $('#preloader').hide();
+        });
+    });
+
+    $('#logo_icon').click(function () {
+
+        userControl.getUserDetails(function (data) {
+
+            if (data) {
+                window.location.href = '../curriculum.html';
+            }
+
+        }, function error(err) {
+            window.location.href = '../index.html'
+        });
+
+    });
+
+</script>
+<script type="text/javascript" src="./static/js/main.007856cc.js"></script>
+</body>
+</html>

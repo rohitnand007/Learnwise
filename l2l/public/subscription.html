@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+
+    <!--Styles-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/subscription.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link href="css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <!--Scripts-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/scripts/header_menu.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/components/bootstrap-select.js"></script>
+    <script src="js/scripts/subscription.js"></script>
+    <!--Remove this when subscribe.js is included-->
+    <script src="js/controllers/user_control.js"></script>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container-fluid container-padding main-content  window-height">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top custom-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle home-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" id="logo_icon"><img class="img-responsive logo-dimensions"
+                                                            src="images/lernwise_logo.svg"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1"
+                 aria-expanded="true">
+                <ul class="nav navbar-nav navbar-right navlist-center">
+                    <li>
+                        <a id="curriculum_nav" class="primary-color" href="curriculum.html">CURRICULUM</a>
+                    </li>
+                    <li>
+                        <a class="primary-color" href="subscription.html">SUBSCRIPTION</a>
+                    </li>
+                    <li class="profile-width">
+                        <a id="signin_nav" style="display: none"
+                           class="signin-customstyle primary-color"
+                           href="sign_in.html">SIGN IN</a>
+                        <a id="profile_nav" style="display: none"
+                           class="signin-customstyle primary-color"></a>
+                    </li>
+                    <li class="signout-width">
+                        <a id="signup_nav" style="display: none" class="signup-customstyle"
+                           href="sign_up.html">SIGN UP FREE</a>
+                        <a id="signout_nav" style="display: none;" class="signup-customstyle"
+                           onclick="signout()">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class=" background subscription window-height ">
+        <div class="container container-alignment">
+            <div class="row  form-margin">
+                <div class="col-lg-6 col-md-6  col-sm-6 ">
+                    <div class="row" id="selection_list"></div>
+                    <div id="errorBox"></div>
+                    <div class="row text-margin" id="add_new_grade_div" style="display: none;">
+                        <div class="col-lg-8 col-md-8 gradeText"> Would you like to add another
+                            grade?
+                        </div>
+                        <div class="col-lg-4 col-md-4"><span class="pull-right" id="add_grade">
+                            <img class="add-icon-font" src="images/plus.svg" alt=""/></span></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="panel panel-default panelmargin-top">
+                        <div class="panel-body panel-align">
+                            <div class="logo-cart"><span class="custom-logo"><i
+                                    class="fa fa-shopping-cart"></i></span></div>
+                            <h4 class="cart-heading">YOUR CART</h4>
+
+                            <div class="subtext-font" id="empty"><img class="image-size"
+                                                                      src="images/Empty Cart.svg"
+                                                                      alt=""/>Your cart is empty
+                            </div>
+                            <div id="cart_items"></div>
+                        </div>
+                        <div class="panel-footer" id="check_out" disabled="disabled"
+                             style="display: none;">
+                            <a class="checkout">CHECKOUT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

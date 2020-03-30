@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>L2L</title>
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet" type="text/css">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/demotopic.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../js/components/jquery.multiselect.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/components/header.js"></script>
+    <script src="../js/scripts/header_menu.js"></script>
+
+    <style>
+        .background {
+            background: url(./images/p121389.png) no-repeat;
+            background-size: cover
+        }
+    </style>
+</head>
+<body>
+<div id="preloader"></div>
+<div class="container-fluid container-padding main-content">
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top nav-color custom-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img
+                        class="img-responsive logo-dimensions"
+                        src="../images/lernwise_logo.svg"/></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1"
+                 aria-expanded="true">
+                <ul class="nav navbar-nav navbar-right navlist-center ">
+                    <li>
+                        <a class="" href="../curriculum.html">CURRICULUM</a>
+                    </li>
+                    <li>
+                        <a class="" href="../subscription.html">SUBSCRIPTION</a>
+                    </li>
+                    <li class="profile-width">
+                        <a id="signin_nav" style="display: none" class="signin-customstyle"
+                           href="../sign_in.html">SIGN IN</a>
+                        <a id="profile_nav" style="display: none" class="signin-customstyle"></a>
+                    </li>
+                    <li class="signout-width">
+                        <a id="signup_nav" style="display: none" class="signup-customstyle"
+                           href="../sign_up.html">SIGN UP FREE</a>
+                        <a id="signout_nav" style="display: none;" class="signup-customstyle"
+                           onclick="signout()">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</div>
+<div class="background window-height">
+    <div class="center arrows">
+        <div class="center-align">
+            <div class="row  row-center text-center">
+                <div class="col-md-1 col-sm-2 col-xs-2  padding-LR0"><a href="sonar.html">
+                    <i class="fa fa-2x fa-angle-left icon-style"
+                       aria-hidden="true"></i></a></div>
+                <div class="col-md-10 col-sm-8 col-xs-8">
+                    <div>
+                        <h1 class="demotext-font">WINDMILL</h1>
+                        <div class="text-center button-paddingtop"><a href="../learningpath2.html">
+                            <button class="btn-concept"> EXPLORE THE CONCEPT</button>
+                        </a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-1 col-sm-2 col-xs-2 padding-LR0">
+                    <a href="newtons_first_law.html">
+                        <i class="fa fa-2x fa-angle-right icon-style" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    localStorage.setItem("topicId", "p121389");
+</script>
+</body>
+</html>

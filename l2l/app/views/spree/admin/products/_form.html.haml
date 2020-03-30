@@ -1,0 +1,64 @@
+%div{"data-hook" => "admin_product_form_fields"}
+  .row
+    .col-xs-12.col-md-12{"data-hook" => "admin_product_form_left"}
+      %div{"data-hook" => "admin_product_form_name"}
+        = f.field_container :name, class: ['form-group'] do
+          = f.label :name, raw(Spree.t(:name) + content_tag(:span, ' *', class: 'required'))
+          = f.text_field :name, class: 'form-control title'
+          = f.error_message_on :name
+    .col-xs-12.col-md-12{"data-hook" => "admin_product_form_right"}
+      %div{"data-hook" => "admin_product_form_available_on"}
+        = f.field_container :available_on, class: ['form-group'] do
+          = f.label :available_on, Spree.t(:available_on)
+          = f.error_message_on :available_on
+          = f.text_field :available_on, value: datepicker_field_value(@product.available_on), class: 'datepicker form-control'
+      %div{"data-hook" => "admin_product_form_discontinue_on"}
+        = f.field_container :discontinue_on, class: ['form-group'] do
+          = f.label :discontinue_on, Spree.t(:discontinue_on)
+          = f.error_message_on :discontinue_on
+          = f.text_field :discontinue_on, value: datepicker_field_value(@product.discontinue_on), class: 'datepicker form-control'
+      - if @product.has_variants?
+        .well{"data-hook" => "admin_product_form_multiple_variants"}
+          .info.marginb
+            = Spree.t(:info_product_has_multiple_skus, count: @product.variants.size)
+          .info-actions
+            - if can?(:admin, Spree::Variant)
+              = link_to_with_icon 'variants', Spree.t(:manage_variants), spree.admin_product_variants_url(@product), class: "btn btn-default"
+      %div{"data-hook" => "admin_product_form_shipping_categories"}
+        = f.field_container :shipping_category, class: ['form-group'] do
+          = f.label :shipping_category_id, Spree.t(:shipping_category)
+          = f.collection_select(:shipping_category_id, @shipping_categories, :id, :name, { include_blank: Spree.t('match_choices.none') }, { class: 'select2' })
+          = f.error_message_on :shipping_category
+      %div{"data-hook" => "admin_product_form_tax_category"}
+        = f.field_container :tax_category, class: ['form-group'] do
+          = f.label :tax_category_id, Spree.t(:tax_category)
+          = f.collection_select(:tax_category_id, @tax_categories, :id, :name, { include_blank: Spree.t('match_choices.none') }, { class: 'select2' })
+          = f.error_message_on :tax_category
+  %div{"data-hook" => "admin_product_form_taxons"}
+    = f.field_container :taxons, class: ['form-group'] do
+      = f.label :taxon_ids, Spree.t(:taxons)
+      - if can? :modify, Spree::Classification
+        = f.hidden_field :taxon_ids, value: @product.taxon_ids.join(',')
+      - elsif @product.taxons.any?
+        %ul.text_list
+          - @product.taxons.each do |taxon|
+            %li= taxon.name
+      - else
+        .alert.alert-info= Spree.t(:no_resource_found, resource: :taxons)
+  %div{"data-hook" => "admin_product_form_option_types"}
+    = f.field_container :option_types, class: ['form-group'] do
+      = f.label :option_type_ids, Spree.t(:option_types)
+      - if can? :modify, Spree::ProductOptionType
+        = f.hidden_field :option_type_ids, value: @product.option_type_ids.join(',')
+      - elsif @product.option_types.any?
+        %ul.text_list
+          - @product.option_types.each do |type|
+            %li
+              = type.presentation
+              (#{type.name})
+      - else
+        .alert.alert-info= Spree.t(:no_resource_found, resource: :option_types)
+  %div{"data-hook" => "admin_product_form_tag_list"}
+    = f.field_container :tag_list, class: ['form-group'] do
+      = f.label :tag_list, Spree.t(:tags)
+      = f.hidden_field :tag_list, value: @product.tag_list.join(','), class: 'tag_picker'

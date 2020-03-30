@@ -1,0 +1,9 @@
+user_cart:
+  user_id: 23
+  product_id: 1
+  price: 10
+
+session_cart:
+  session_id: 'abc1'
+  product_id: 2
+  price: 20
